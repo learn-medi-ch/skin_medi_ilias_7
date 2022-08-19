@@ -7,6 +7,46 @@
 @medi-darker-background: #e0e0de;
 @medi-dark-background: #cdcdca;
 
+@medi_grey_1: #f0f0f0;
+@medi_grey_2: rgb(186,186,177);
+@medi_grey_3: #2f2f2f;
+
+
+
+@medi_yellow_1: #F7FAEF;
+@medi_yellow_2: #E8F1CE;
+@medi_green_1: #8CB80D;
+@medi_green_2: #73A000;
+@medi_blue_1: rgb(186,186,177);;
+@medi_blue_2: rgb(186,186,177);;
+@medi_blue_3: rgb(186,186,177);;
+@medi_red_1: #FFE1E1;
+@medi_red_2: #FF194B;
+
+@black: #000000;
+@white: #FFFFFF;
+
+@custom_application_bg: @medi_grey_1;
+@custom_widget_bg: @white;
+
+@custom_font_color_alert_danger: @medi_red_2;
+@custom_message_alert_danger_bg_color: @medi_red_1;
+@custom_message_alert_danger_border_color: @medi_red_2;
+@custom_message_alert_danger_font_color: @custom_font_color_alert_danger;
+
+@custom_message_alert_success_bg_color: @medi_yellow_2;
+@custom_message_alert_success_border_color: @medi_green_1;
+@custom_message_alert_success_font_color: @medi_blue_3;
+
+@custom_message_alert_info_bg_color: @medi_blue_1;
+@custom_message_alert_info_border_color: @medi_blue_3;
+@custom_message_alert_info_font_color: @white;
+
+@custom_message_alert-warning_bg_color:  @medi_yellow_2;
+@custom_message_alert-warning_border_color:  @medi_green_1;
+@custom_message_alert-warning_font_color:  @medi_blue_3;
+
+
 .header-inner {
   padding: 0 25px;
   background-color: @medi-background;
@@ -241,3 +281,275 @@ div.ilFrame {
 .il-item .il-item-divider {
   padding: 0px;
 }
+
+//login screen
+.medi-login-container {
+  input:invalid {
+    border-color: @custom_message_alert_danger_border_color;
+  }
+
+  .form-horizontal .help-block {
+    padding: 4px;
+  }
+
+  .form-horizontal label {
+    color: #fff !important;
+  }
+
+  .ilFormRequired, .asterisk{
+    display: none;
+  }
+
+  .ilFormHeader {
+    padding: 0px;
+  }
+
+  .alert-danger:first-child {
+    margin-bottom: 15px;
+  }
+
+  #il_prop_cont_username {
+    label {
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  #il_prop_cont_password {
+    label
+    {
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  #il_prop_cont_password > div > br {
+    display: none;
+  }
+
+
+  .ilFormHeader {
+    margin-top: 15px;
+  }
+
+  div.ilStartupSection form.form-horizontal {
+    background-color: @medi_grey_2 !important;
+  }
+
+  max-width: 410px;
+  max-height: 410px;
+
+  background-color: @medi_grey_2;
+  position: relative;
+
+  &:before {
+    background-image: url("images/login_form_border.svg");
+    background-position: center top;
+    background-repeat: repeat;
+    background-size: 425px 425px;
+    content: "";
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -20px
+  }
+
+
+  @media only screen and (min-width: 768px) {
+    .col-sm-6 {
+      width: 100%;
+    }
+  }
+
+
+
+  @media only screen and (max-width: @grid-float-breakpoint-max) {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0px;
+    border: none;
+  }
+
+
+
+  div.form-horizontal {
+
+    .col-sm-3 {
+      text-align: left;
+      width: 100%;
+      padding-left: 5px;
+    }
+    .col-sm-9 {
+      width: 100%;
+      padding-left: 5px;
+    }
+  }
+
+  ////
+  //Registration
+  #il_prop_cont_username label {
+    width: 80%;
+
+  }
+
+  .ilFormFooter,
+  .ilFormHeader {
+    background-color: @medi_grey_2;
+    /* margin-right: 15px;
+    margin-left: 15px; */
+  }
+
+  div.ilStartupSection {
+    .ilHeader {
+      display: none;
+    }
+
+
+    .ilFormHeader h3 {
+      color: #fff;
+      /*font-size: @font-size-h1;*/
+      font-weight: normal;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 5px;
+      padding-top: 0px;
+      text-transform: uppercase;
+    }
+
+    form.form-horizontal {
+      width: 100%;
+    }
+
+    form label.control-label {
+      text-align: left;
+      width: 100%;
+      text-transform: uppercase;
+      min-height: 0;
+    }
+
+    form input.form-control {
+      width: 100% !important;
+    }
+  }
+
+  .ilStartupSection {
+    padding-top: 0px;
+  }
+
+  //Form Content
+  input:invalid {
+    background-color: @custom_widget_bg;
+  }
+
+
+  ///////////////////////////////////
+  //Form
+  .ilFormHeader {
+
+    h3 {
+      background-color: @custom_application_bg;
+      color: #fff;
+      display: block;
+      width: 100%;
+      padding-top: 30px;
+    }
+    h3 {
+      background-color: transparent;
+      color: #fff;
+      border: none;
+    }
+
+    //margin-bottom: 30px;
+  }
+  .form-horizontal label {
+    color: #fff;
+  }
+
+  .ilFormHeader {
+
+  }
+
+  .form-horizontal {
+    background-color: @medi_grey_2 !important;
+
+    label {
+      color: @text-color;
+    }
+  }
+
+
+  [type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea, [type=radio] {
+    height: auto;
+    padding: 8px 8px;
+  }
+  .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] {
+
+    margin-top: 5px;
+  }
+  .form-horizontal .control-label {
+    //padding-top: 20px;
+  }
+
+  .form-horizontal .checkbox,
+  .form-horizontal .input-group,
+  .form-horizontal .radio:first-child {
+    height: auto;
+    padding-left: 2px;
+    padding-right: 8px;
+    padding-top: 2px;
+  }
+
+  .form-horizontal .radio {
+    padding-left: 2px;
+    padding-right: 8px;
+  }
+
+  .ilFormHeader .ilFormCmds {
+    margin-top: -30px;
+  }
+
+
+  .form-control, .form-control:focus, input:invalid {
+    border-color: #fff;
+    background-color: @medi_grey_2;
+  }
+
+  .ilFormFooter {
+    display: inline-flex;
+  }
+
+  .ilFormCmds {
+    /*margin-top: -25px;*/
+
+    .btn {
+      margin-left:5px;
+      text-transform: uppercase;
+      width: 3.5em;
+    }
+  }
+
+  .form-horizontal {
+    margin-bottom: 0;
+  }
+
+  .form-horizontal + p {
+    display: none;
+  }
+
+  .form-horizontal + p + .ilStartupSection {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+    align-items: flex-end;
+    //padding-right: 15px;
+    margin-bottom: 18px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+
