@@ -19373,7 +19373,7 @@ div.ilFrame {
   position: absolute;
   top: 150px;
   right: 10%;
-  width: 50%;
+  width: 410px;
 }
 .flexitem_c2 {
   flex: 1;
@@ -19383,12 +19383,21 @@ div.ilFrame {
 }
 .medi-login-container {
   margin-top: 170px;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 410px;
-  max-height: 410px;
+  margin-left: 80px;
+  width: 410px;
+  height: 380px;
   background-color: #babab1;
   position: relative;
+}
+.medi-login-container span.reg-links {
+  margin-right: 25px;
+  float: right;
+  width: 150px;
+  margin-top: -70px;
+}
+.medi-login-container span.reg-links a {
+  color: #fff;
+  text-decoration: underline;
 }
 .medi-login-container input:invalid {
   border-color: #ff194b;
@@ -19517,7 +19526,7 @@ div.ilFrame {
   color: #fff;
 }
 .medi-login-container .ilFormFooter {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .medi-login-container .form-horizontal {
   background-color: #babab1 !important;
