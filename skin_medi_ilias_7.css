@@ -19215,10 +19215,6 @@ div.il_HeaderInner {
   background-color: #2f2f2f;
   color: #fff;
 }
-.ilFormHeader,
-.ilFormFooter {
-  background-color: #fff !important;
-}
 body {
   font-size: 14px !important;
   color: #333 !important;
@@ -19352,7 +19348,43 @@ div.ilFrame {
 .il-item .il-item-divider {
   padding: 0px;
 }
+.main_flexed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.flexitem_c1 {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  text-align: center;
+  position: relative;
+}
+.flexitem_c1 img.flexitem_c1_bg {
+  object-fit: cover;
+  object-position: center center;
+  height: 100%;
+  position: fixed;
+  width: inherit;
+}
+.flexitem_c1 img.flexitem_c1_logo {
+  position: absolute;
+  top: 150px;
+  right: 10%;
+  width: 50%;
+}
+.flexitem_c2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 67%;
+}
 .medi-login-container {
+  margin-top: 15%;
+  margin-right: auto;
+  margin-left: auto;
   max-width: 410px;
   max-height: 410px;
   background-color: #babab1;
@@ -19372,7 +19404,7 @@ div.ilFrame {
   display: none;
 }
 .medi-login-container .ilFormHeader {
-  padding: 0px;
+  padding-bottom: 30px;
 }
 .medi-login-container .alert-danger:first-child {
   margin-bottom: 15px;
@@ -19388,11 +19420,9 @@ div.ilFrame {
 .medi-login-container #il_prop_cont_password > div > br {
   display: none;
 }
-.medi-login-container .ilFormHeader {
-  margin-top: 15px;
-}
 .medi-login-container div.ilStartupSection form.form-horizontal {
   background-color: #babab1 !important;
+  padding: 30px;
 }
 .medi-login-container:before {
   background-image: url("images/login_form_border.svg");
@@ -19435,11 +19465,14 @@ div.ilFrame {
 .medi-login-container .ilFormFooter,
 .medi-login-container .ilFormHeader {
   background-color: #babab1;
-  /* margin-right: 15px;
-    margin-left: 15px; */
 }
 .medi-login-container div.ilStartupSection .ilHeader {
-  display: none;
+  color: #fff;
+  font-size: 27px;
+  font-weight: normal;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  text-transform: uppercase;
 }
 .medi-login-container div.ilStartupSection .ilFormHeader h3 {
   color: #fff;
@@ -19482,6 +19515,9 @@ div.ilFrame {
 }
 .medi-login-container .form-horizontal label {
   color: #fff;
+}
+.medi-login-container .ilFormFooter {
+  padding-bottom: 30px;
 }
 .medi-login-container .form-horizontal {
   background-color: #babab1 !important;

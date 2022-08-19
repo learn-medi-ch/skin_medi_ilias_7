@@ -7,47 +7,104 @@
         background-size: cover;
     }
 
+    header,
+    footer {
+        display: none;
+    }
+
+    div.il_HeaderInner {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .il-layout-page {
+        all: unset;
+    }
+
+    .il-layout-page-content {
+        all: unset;
+    }
+
+    .container-fluid {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .breadcrumbs {
+        display: none;
+    }
+
+    .nav .il-maincontrols {
+        display: none;
+    }
+
+    .il-mainbar {
+        display: none;
+    }
+
     .ilMainHeader{
-        box-shadow: 0px 3px 3px rgba(25, 25, 25, 0.20) !important;
+       box-shadow: 0px 3px 3px rgba(25, 25, 25, 0.20) !important;
     }
 </style>
 
-
-{MESSAGE}
-<div class="medi-login-container">
-<div class="ilMessageBox">
-    <!-- BEGIN warning -->
-    <img class="ilFailureMessage" alt="{ALT_IMAGE}" title="{ALT_IMAGE}" src="{SRC_IMAGE}" />
-    <div class="ilFailureMessage">
-        <h5 class="ilAccHeadingHidden"><a id="il_message_focus" name="il_message_focus">{MESSAGE_HEADING}</a></h5>
-        {TXT_MSG_LOGIN_FAILED}
+<div class="main_flexed">
+    <div class="flexitem_c1">
+        <img class="flexitem_c1_bg" src="./Customizing/global/skin/skin_medi_ilias_7/images/bg_left.jpg">
+        <a href="/">
+            <img class="flexitem_c1_logo" src="./Customizing/global/skin/skin_medi_ilias_7/images/bg_left_logo.svg">
+        </a>
     </div>
-    <!-- END warning -->
-    <!-- BEGIN success -->
-    <img class="ilSuccessMessage" alt="{ALT_IMAGE}" title="{ALT_IMAGE}" src="{SRC_IMAGE}" />
-    <div class="ilSuccessMessage">
-        <h5 class="ilAccHeadingHidden"><a id="il_message_focus" name="il_message_focus">{MESSAGE_HEADING}</a></h5>
-        {TXT_MSG_LOGIN_SUCCESS}
+    <div class="flexitem_c2">
+
+        <style>
+            body {
+                background: #f0f0f0;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+
+            }
+        </style>
+
+            {MESSAGE}
+
+            <div class="medi-login-container">
+            <div class="ilMessageBox">
+                <!-- BEGIN warning -->
+                <img class="ilFailureMessage" alt="{ALT_IMAGE}" title="{ALT_IMAGE}" src="{SRC_IMAGE}" />
+                <div class="ilFailureMessage">
+                    <h5 class="ilAccHeadingHidden"><a id="il_message_focus" name="il_message_focus">{MESSAGE_HEADING}</a></h5>
+                    {TXT_MSG_LOGIN_FAILED}
+                </div>
+                <!-- END warning -->
+                <!-- BEGIN success -->
+                <img class="ilSuccessMessage" alt="{ALT_IMAGE}" title="{ALT_IMAGE}" src="{SRC_IMAGE}" />
+                <div class="ilSuccessMessage">
+                    <h5 class="ilAccHeadingHidden"><a id="il_message_focus" name="il_message_focus">{MESSAGE_HEADING}</a></h5>
+                    {TXT_MSG_LOGIN_SUCCESS}
+                </div>
+                <!-- END success -->
+            </div>
+
+            <ul id="ilTopBarNav" class="">
+                <!-- BEGIN lang_select -->
+                <li class="dropdown"><a id="mm_lang_sel" href="#" class="dropdown-toggle" data-toggle="dropdown">{TXT_LANGSELECT} <span class="caret"></span></a>
+                    {LANG_SELECT}
+                </li>
+                <!-- END lang_select -->
+            </ul>
+
+            {STARTUP_CONTENT}
+            <!-- BEGIN links_bl -->
+            <div class="ilCenter" style="padding-top: 25px">
+                <!-- BEGIN link_item_bl -->
+                <a class="il_ContainerItemCommand" href="{LINK_URL}">{LINK_TXT}</a>
+                <!-- END link_item_bl -->
+            </div>
+            <!-- END links_bl -->
+            </div>
+            {PRMLINK}
+            {SCRIPT}
     </div>
-    <!-- END success -->
 </div>
-
-<ul id="ilTopBarNav" class="">
-    <!-- BEGIN lang_select -->
-    <li class="dropdown"><a id="mm_lang_sel" href="#" class="dropdown-toggle" data-toggle="dropdown">{TXT_LANGSELECT} <span class="caret"></span></a>
-        {LANG_SELECT}
-    </li>
-    <!-- END lang_select -->
-</ul>
-
-{STARTUP_CONTENT}
-<!-- BEGIN links_bl -->
-<div class="ilCenter" style="padding-top: 25px">
-    <!-- BEGIN link_item_bl -->
-    <a class="il_ContainerItemCommand" href="{LINK_URL}">{LINK_TXT}</a>
-    <!-- END link_item_bl -->
-</div>
-<!-- END links_bl -->
-</div>
-{PRMLINK}
-{SCRIPT}

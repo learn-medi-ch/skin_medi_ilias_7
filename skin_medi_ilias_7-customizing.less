@@ -115,10 +115,6 @@ div.il_HeaderInner {
   color: #fff;
 }
 
-.ilFormHeader, .ilFormFooter {
-  background-color:  #fff !important;
-}
-
 
 body {
   font-size: 14px !important;
@@ -282,8 +278,49 @@ div.ilFrame {
   padding: 0px;
 }
 
+
 //login screen
+
+.main_flexed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.flexitem_c1 {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  text-align: center;
+  position: relative;
+}
+.flexitem_c1 img.flexitem_c1_bg {
+  object-fit: cover;
+  object-position: center center;
+  height: 100%;
+  position: fixed;
+  width: inherit;
+}
+.flexitem_c1 img.flexitem_c1_logo {
+  position: absolute;
+  top: 150px;
+  right: 10%;
+  width: 50%;
+}
+.flexitem_c2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 67%;
+}
+
 .medi-login-container {
+
+  margin-top: 15%;
+  margin-right: auto;
+  margin-left: auto;
+
   input:invalid {
     border-color: @custom_message_alert_danger_border_color;
   }
@@ -301,7 +338,7 @@ div.ilFrame {
   }
 
   .ilFormHeader {
-    padding: 0px;
+    padding-bottom: 30px;
   }
 
   .alert-danger:first-child {
@@ -328,12 +365,9 @@ div.ilFrame {
   }
 
 
-  .ilFormHeader {
-    margin-top: 15px;
-  }
-
   div.ilStartupSection form.form-horizontal {
     background-color: @medi_grey_2 !important;
+    padding: 30px;
   }
 
   max-width: 410px;
@@ -397,13 +431,16 @@ div.ilFrame {
   .ilFormFooter,
   .ilFormHeader {
     background-color: @medi_grey_2;
-    /* margin-right: 15px;
-    margin-left: 15px; */
   }
 
   div.ilStartupSection {
     .ilHeader {
-      display: none;
+      color: #fff;
+      font-size: 27px;
+      font-weight: normal;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 5px;
+      text-transform: uppercase;
     }
 
 
@@ -465,10 +502,10 @@ div.ilFrame {
   .form-horizontal label {
     color: #fff;
   }
-
-  .ilFormHeader {
-
+  .ilFormFooter {
+    padding-bottom: 30px;
   }
+
 
   .form-horizontal {
     background-color: @medi_grey_2 !important;
