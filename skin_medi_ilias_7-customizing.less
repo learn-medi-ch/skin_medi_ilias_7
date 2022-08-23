@@ -291,16 +291,15 @@ div.ilFrame {
 .flexitem_c1 {
   display: flex;
   flex-direction: column;
-  width: 33%;
+  width: 20%;
   text-align: center;
   position: relative;
 }
 .flexitem_c1 img.flexitem_c1_bg {
-  object-fit: cover;
-  object-position: center center;
-  height: 100%;
   position: fixed;
-  width: inherit;
+  left: 150px;
+  top: 150px;
+  max-height: 500px;
 }
 .flexitem_c1 img.flexitem_c1_logo {
   position: absolute;
@@ -312,24 +311,46 @@ div.ilFrame {
   flex: 1;
   display: flex;
   flex-direction: column;
-  width: 67%;
+  width: 80%;
+  margin-left: 50%;
+  margin-right: 50%;
 }
+
+
+
 
 .medi-login-container {
 
-  span.reg-links {
-    margin-right: 25px;
+  .ilFormFooter .ilFormCmds {
+    padding-top: 20px;
+  }
+
+  .form-control {
+    font-size: 30px;
+  }
+
+  .btn-default {
+    font-size: 30px;
+  }
+
+    span.reg-links {
+    margin-right: 80px;
     float: right;
-    width: 150px;
-    margin-top: -70px;
+    width: 250px;
+    margin-top: -0px;
+      font-size: 30px;
     a {
-      color: #fff;
+      color: @medi-link-blue;
       text-decoration: underline;
     }
   }
 
-  margin-top: 170px;
-  margin-left: 80px;
+  margin-top: 400px;
+  width: 800px;
+  height: 650px;
+
+  background-color: #fff;
+  position: relative;
 
   input:invalid {
     border-color: @custom_message_alert_danger_border_color;
@@ -340,7 +361,8 @@ div.ilFrame {
   }
 
   .form-horizontal label {
-    color: #fff !important;
+    color: #333 !important;
+    font-size: 30px;
   }
 
   .ilFormRequired, .asterisk{
@@ -376,30 +398,9 @@ div.ilFrame {
 
 
   div.ilStartupSection form.form-horizontal {
-    background-color: @medi_grey_2 !important;
+    background-color: #fff !important;
     padding: 30px;
   }
-
-  width: 410px;
-  height: 380px;
-
-  background-color: @medi_grey_2;
-  position: relative;
-
-  &:before {
-    background-image: url("images/login_form_border.svg");
-    background-position: center top;
-    background-repeat: repeat;
-    background-size: 425px 425px;
-    content: "";
-    display: block;
-    height: 20px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: -20px
-  }
-
 
   @media only screen and (min-width: 768px) {
     .col-sm-6 {
@@ -407,16 +408,12 @@ div.ilFrame {
     }
   }
 
-
-
   @media only screen and (max-width: @grid-float-breakpoint-max) {
     max-width: 100%;
     width: 100%;
     margin-top: 0px;
     border: none;
   }
-
-
 
   div.form-horizontal {
 
@@ -440,17 +437,12 @@ div.ilFrame {
 
   .ilFormFooter,
   .ilFormHeader {
-    background-color: @medi_grey_2;
+    background-color: #fff;
   }
 
   div.ilStartupSection {
     .ilHeader {
-      color: #fff;
-      font-size: 27px;
-      font-weight: normal;
-      border-bottom: 1px solid #fff;
-      padding-bottom: 5px;
-      text-transform: uppercase;
+      display: none;
     }
 
 
@@ -496,21 +488,23 @@ div.ilFrame {
 
     h3 {
       background-color: @custom_application_bg;
-      color: #fff;
+      color: #333 !important;
       display: block;
       width: 100%;
       padding-top: 30px;
     }
     h3 {
       background-color: transparent;
-      color: #fff;
+      color: #333 !important;
       border: none;
     }
 
     //margin-bottom: 30px;
   }
   .form-horizontal label {
-    color: #fff;
+    color: #333 !important;
+    padding-bottom: 20px;
+
   }
   .ilFormFooter {
     padding-bottom: 10px;
@@ -518,11 +512,7 @@ div.ilFrame {
 
 
   .form-horizontal {
-    background-color: @medi_grey_2 !important;
-
-    label {
-      color: @text-color;
-    }
+    background-color:  #fff !important;
   }
 
 
@@ -558,8 +548,8 @@ div.ilFrame {
 
 
   .form-control, .form-control:focus, input:invalid {
-    border-color: #fff;
-    background-color: @medi_grey_2;
+    border-color: @medi_grey_2;
+    background-color: @medi_grey_1;
   }
 
   .ilFormFooter {
@@ -595,6 +585,19 @@ div.ilFrame {
     a {
       text-decoration: underline;
     }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .flexitem_c1 {
+    display: none;
+  }
+  .medi-login-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .col-sm-6 {
+    width: 100%;
   }
 }
 
