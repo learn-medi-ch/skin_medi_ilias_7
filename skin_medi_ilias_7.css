@@ -20293,6 +20293,7 @@ a#il_mhead_t_focus {
 }
 .breadcrumb_wrapper .breadcrumb {
   font-size: 14px;
+  font-weight: 600 !important;
 }
 .panel .panel-heading.ilHeader h2,
 .panel .panel-heading.ilBlockHeader h2,
