@@ -20279,7 +20279,8 @@ header img {
   height: 40px;
 }
 a#il_mhead_t_focus {
-  font-size: 30px;
+  font-size: 20px;
+	font-weight: 600;
 }
 .il-maincontrols-metabar > li > .btn-bulky .glyphicon,
 .il-maincontrols-metabar > li > .link-bulky .glyphicon {
