@@ -7981,7 +7981,7 @@ ul.dropdown-menu > li > .btn:focus {
 .breadcrumb_wrapper {
   width: 100%;
   display: inline-grid;
-  background: #eceff3;
+  background: #ffffff;
 }
 .breadcrumb_wrapper .breadcrumb {
   white-space: nowrap;
@@ -9138,7 +9138,7 @@ header {
 .breadcrumbs {
   -ms-flex-align: center;
   align-items: center;
-  background-color: #eceff3;
+  background-color: #ffffff;
   border-top: 1px solid #dddddd;
   display: -ms-flexbox;
   display: flex;
