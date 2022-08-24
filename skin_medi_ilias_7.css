@@ -20279,7 +20279,7 @@ header img {
   height: 40px;
 }
 a#il_mhead_t_focus {
-  font-size: 45px;
+  font-size: 30px;
 }
 .il-maincontrols-metabar > li > .btn-bulky .glyphicon,
 .il-maincontrols-metabar > li > .link-bulky .glyphicon {
@@ -20308,8 +20308,8 @@ a#il_mhead_t_focus {
   font-weight: 600;
 }
 #headerimage {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   margin-top: 3px;
 }
 .col-xs-1,
