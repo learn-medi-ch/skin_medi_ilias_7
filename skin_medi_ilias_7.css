@@ -20879,3 +20879,6 @@ img.flexitem_c1_bg {
 body {
 	font-size: 18px;	
 }
+div.ilc_text_block_Standard, body.ilc_text_block_Standard {
+   padding-left: 12px;		
+}
