@@ -20265,19 +20265,18 @@ div.alert ul {
   height: 60px;
 }
 .il-mainbar-tools-button {
-  height: 120px;
   margin-top: 30px;
   margin-left: 30px;
 }
 .il-layout-page {
-  -ms-grid-rows: 120px auto 33px 1fr;
-  grid-template-rows: 120px auto 33px 1fr;
+  -ms-grid-rows: 60px auto 33px 1fr;
+  grid-template-rows: 60px auto 33px 1fr;
 }
 .header-inner {
-  height: 120px;
+  height: 60px;
 }
 header img {
-  height: 80px;
+  height: 60px;
 }
 a#il_mhead_t_focus {
   font-size: 45px;
