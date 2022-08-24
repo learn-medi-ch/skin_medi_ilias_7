@@ -20395,10 +20395,7 @@ h2.ilHeader {
 div.il_ItemProperties {
   font-size: 80%;
 }
-h1,
-h2 {
-  height: 3.5em;
-}
+
 .il-item .il-item-property-name,
 .il-item-property-value,
 .panel-secondary .il-item .il-item-description {
