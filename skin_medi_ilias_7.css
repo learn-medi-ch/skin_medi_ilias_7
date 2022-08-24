@@ -20265,8 +20265,8 @@ div.alert ul {
   height: 60px;
 }
 .il-mainbar-tools-button {
-  margin-top: 30px;
-  margin-left: 30px;
+  /*margin-top: 30px;
+  margin-left: 30px;*/
 }
 .il-layout-page {
   -ms-grid-rows: 60px auto 33px 1fr;
