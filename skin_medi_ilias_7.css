@@ -12509,7 +12509,7 @@ h1.ilHeader {
   }
 }
 h2.ilHeader {
-  font-weight: normal;
+  font-weight: 600;
   padding: 0;
   margin: 0;
   display: inline;
@@ -16882,7 +16882,7 @@ div.il_ContainerListItem {
   padding-right: 8px;
 }
 .ilContainerBlockHeader {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   padding: 9px 12px;
   font-weight: 400;
   text-align: left;
