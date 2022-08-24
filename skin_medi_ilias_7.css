@@ -20208,15 +20208,15 @@ with the il- variable set here.
 }
 .il-mainbar-triggers .btn-bulky,
 .il-mainbar-triggers .il-link.link-bulky {
-  height: 140px !important;
+  height: 120px !important;
 }
 .il-mainbar-triggers {
   width: 140px !important;
 }
 .icon.small {
-  height: 60px !important;
-  width: 60px !important;
-  line-height: 60px !important;
+  height: 40px !important;
+  width: 40px !important;
+  line-height: 40px !important;
 }
 .il-maincontrols-mainbar .btn-bulky,
 .il-maincontrols-metabar .btn-bulky,
