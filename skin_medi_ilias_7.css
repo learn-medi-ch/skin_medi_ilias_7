@@ -12567,7 +12567,8 @@ div.ilHeaderAlert {
   color: #B54F00;
 }
 div.il_HeaderInner {
-  padding: 15px;
+	padding-top: 15px;
+  padding-left: 15px;
   margin-bottom: 5px;
   overflow: visible;
 }
@@ -20290,7 +20291,7 @@ a#il_mhead_t_focus {
   top: 90px;
 }
 .breadcrumb_wrapper .breadcrumb {
-  padding-left: 150px;
+  padding-left: 155px;
 }
 .breadcrumb_wrapper .breadcrumb {
   font-size: 14px;
@@ -20313,6 +20314,7 @@ a#il_mhead_t_focus {
   width: 40px;
   height: 40px;
   margin-top: 3px;
+	display: none;
 }
 .col-xs-1,
 .col-sm-1,
