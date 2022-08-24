@@ -20882,3 +20882,6 @@ body {
 div.ilc_text_block_Standard, body.ilc_text_block_Standard {
    padding-left: 12px;		
 }
+h1.ilc_heading1_Headline1, div.ilc_text_block_Headline1, body.ilc_text_block_Headline1 {
+	 padding-left: 12px;	
+}
