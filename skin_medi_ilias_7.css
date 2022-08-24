@@ -20360,8 +20360,8 @@ a#il_mhead_t_focus {
 .col-sm-12,
 .col-md-12,
 .col-lg-12 {
-  padding-left: 30px;
-  padding-right: 30px;
+  /*padding-left: 30px;
+  padding-right: 30px;*/
 }
 .header-inner {
   padding: 0 25px;
