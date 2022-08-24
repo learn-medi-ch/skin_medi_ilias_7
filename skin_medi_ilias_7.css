@@ -9138,7 +9138,7 @@ header {
 .breadcrumbs {
   -ms-flex-align: center;
   align-items: center;
-  background-color: white;
+  background-color: #eceff3;
   border-top: 1px solid #dddddd;
   display: -ms-flexbox;
   display: flex;
