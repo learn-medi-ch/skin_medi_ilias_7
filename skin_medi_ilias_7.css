@@ -7981,7 +7981,7 @@ ul.dropdown-menu > li > .btn:focus {
 .breadcrumb_wrapper {
   width: 100%;
   display: inline-grid;
-  background: white;
+  background: #eceff3;
 }
 .breadcrumb_wrapper .breadcrumb {
   white-space: nowrap;
