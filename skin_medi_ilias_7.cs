@@ -20201,169 +20201,6 @@ with the il- variable set here.
 /** nagtive or positive contrast color for text and glyph **/
 /** contrast threshold for contrast color **/
 /** three color variants for neutral, important, breaking Head Infos **/
-.il-maincontrols-mainbar {
-  -ms-grid-colums: 140px 400px !important;
-  grid-template-columns: 140px 400px !important;
-  width: 140px !important;
-}
-.il-mainbar-triggers .btn-bulky,
-.il-mainbar-triggers .il-link.link-bulky {
-  height: 140px !important;
-}
-.il-mainbar-triggers {
-  width: 140px !important;
-}
-.icon.small {
-  height: 60px !important;
-  width: 60px !important;
-  line-height: 60px !important;
-}
-.il-maincontrols-mainbar .btn-bulky,
-.il-maincontrols-metabar .btn-bulky,
-.il-maincontrols-mainbar .il-link.link-bulky,
-.il-maincontrols-metabar .il-link.link-bulky {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-}
-.il-mainbar-slates {
-  width: 500px;
-}
-.il-maincontrols-slate .btn-bulky .bulky-label,
-.il-maincontrols-slate .link-bulky .bulky-label {
-  font-size: 2.5rem;
-  margin-left: 15px;
-}
-.il-maincontrols-slate .btn-bulky .bulky-label,
-.il-maincontrols-slate .link-bulky .bulky-label {
-  line-height: 4rem;
-}
-.il-mainbar-close-slates .btn-bulky .glyph:before {
-  color: white;
-}
-.il-mainbar-close-slates .btn-bulky {
-  background-color: #008cd7;
-}
-.il-mainbar-close-slates .btn-bulky:hover {
-  background-color: #2f2f2f;
-}
-.jstree-default .jstree-node {
-  font-size: 24px;
-  line-height: 40px;
-}
-.jstree img {
-  width: 40px;
-  height: 40px;
-}
-.il-item .il-item-title {
-  font-size: 100%;
-}
-div.alert ul {
-  font-size: 24px;
-}
-.il-mainbar-tools-button .btn-bulky,
-.il-mainbar-tools-button .btn-bulky.engaged {
-  height: 60px;
-}
-.il-mainbar-tools-button {
-  height: 120px;
-  margin-top: 30px;
-  margin-left: 30px;
-}
-.il-layout-page {
-  -ms-grid-rows: 120px auto 33px 1fr;
-  grid-template-rows: 120px auto 33px 1fr;
-}
-.header-inner {
-  height: 120px;
-}
-header img {
-  height: 80px;
-}
-a#il_mhead_t_focus {
-  font-size: 45px;
-}
-.il-maincontrols-metabar > li > .btn-bulky .glyphicon,
-.il-maincontrols-metabar > li > .link-bulky .glyphicon {
-  font-size: 40px;
-}
-.il-metabar-slates {
-  top: 90px;
-}
-.breadcrumb_wrapper .breadcrumb {
-  padding-left: 150px;
-}
-.breadcrumb_wrapper .breadcrumb {
-  font-size: 14px;
-}
-.panel .panel-heading.ilHeader h2,
-.panel .panel-heading.ilBlockHeader h2,
-.panel .panel-heading.ilHeader h2.ilHeader,
-.panel .panel-heading.ilBlockHeader h2.ilHeader {
-  font-size: 24px;
-}
-.panel .panel-heading.ilHeader h4,
-.panel .panel-heading.ilBlockHeader h4,
-.panel .panel-heading.ilHeader h4.ilBlockHeader,
-.panel .panel-heading.ilBlockHeader h4.ilBlockHeader {
-  font-size: 24px;
-  font-weight: 600;
-}
-#headerimage {
-  width: 60px;
-  height: 60px;
-  margin-top: 3px;
-}
-.col-xs-1,
-.col-sm-1,
-.col-md-1,
-.col-lg-1,
-.col-xs-2,
-.col-sm-2,
-.col-md-2,
-.col-lg-2,
-.col-xs-3,
-.col-sm-3,
-.col-md-3,
-.col-lg-3,
-.col-xs-4,
-.col-sm-4,
-.col-md-4,
-.col-lg-4,
-.col-xs-5,
-.col-sm-5,
-.col-md-5,
-.col-lg-5,
-.col-xs-6,
-.col-sm-6,
-.col-md-6,
-.col-lg-6,
-.col-xs-7,
-.col-sm-7,
-.col-md-7,
-.col-lg-7,
-.col-xs-8,
-.col-sm-8,
-.col-md-8,
-.col-lg-8,
-.col-xs-9,
-.col-sm-9,
-.col-md-9,
-.col-lg-9,
-.col-xs-10,
-.col-sm-10,
-.col-md-10,
-.col-lg-10,
-.col-xs-11,
-.col-sm-11,
-.col-md-11,
-.col-lg-11,
-.col-xs-12,
-.col-sm-12,
-.col-md-12,
-.col-lg-12 {
-  padding-left: 30px;
-  padding-right: 30px;
-}
 .header-inner {
   padding: 0 25px;
   background-color: #eceff3;
@@ -20373,37 +20210,6 @@ a#il_mhead_t_focus {
 }
 #block_pdmem_0 > div > h2 {
   color: #008cd7;
-}
-.nav-tabs > li > a {
-  font-size: 18px;
-}
-#ilSubTab > li > a {
-  font-size: 14px;
-}
-.btn {
-  font-size: 18px;
-}
-input.btn {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-div.ilHeaderAlert {
-  font-size: 75%;
-}
-h2.ilHeader {
-  font-size: 24px;
-}
-div.il_ItemProperties {
-  font-size: 80%;
-}
-h1,
-h2 {
-  height: 3.5em;
-}
-.il-item .il-item-property-name,
-.il-item-property-value,
-.panel-secondary .il-item .il-item-description {
-  font-size: 20px !important;
 }
 .il-panel-listing-std-container,
 .panel .panel-body,
@@ -20424,15 +20230,13 @@ h2 {
   margin-bottom: 0px;
   border-bottom: 2px solid #e0e0de;
 }
-.form-control {
-  height: 40px;
-}
-.form-control {
-  font-size: 26px;
-}
 .il-maincontrols-slate .btn-bulky .icon,
 .il-maincontrols-slate .link-bulky .icon {
   filter: none;
+}
+div.il_HeaderInner {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .il-item-group {
   clear: both;
@@ -20457,7 +20261,7 @@ h2 {
   color: #fff;
 }
 body {
-  font-size: 24px;
+  font-size: 14px !important;
   color: #333 !important;
 }
 .breadcrumb_wrapper .breadcrumb {
@@ -20636,21 +20440,17 @@ img.flexitem_c1_bg {
   }
 }
 .medi-login-container {
-  margin-top: 25%;
   margin-left: auto;
   margin-right: auto;
   width: 800px;
   height: 800px;
   background-color: #fff;
 }
-.medi-login-container p {
-  margin: 20px;
-  padding: 20px;
-}
 .medi-login-container .form-horizontal .help-block {
   font-size: 30px;
 }
 .medi-login-container .medi-icon-container {
+  margin-top: 50%;
   padding-top: 40px;
 }
 .medi-login-container .medi-icon {
@@ -20658,8 +20458,7 @@ img.flexitem_c1_bg {
   margin-left: 40px;
   margin-right: 20px;
 }
-.medi-login-container h2.medi-system-label,
-.medi-login-container h2.ilHeader {
+.medi-login-container h2.medi-system-label {
   font-weight: normal;
   height: 60px;
   vertical-align: middle;
@@ -20679,7 +20478,7 @@ img.flexitem_c1_bg {
   padding-right: 15px;
 }
 .medi-login-container span.reg-links {
-  margin-right: 160px;
+  margin-right: 80px;
   float: right;
   width: 250px;
   margin-top: 0px;
@@ -20752,6 +20551,9 @@ img.flexitem_c1_bg {
 .medi-login-container .ilFormFooter,
 .medi-login-container .ilFormHeader {
   background-color: #fff;
+}
+.medi-login-container div.ilStartupSection .ilHeader {
+  display: none;
 }
 .medi-login-container div.ilStartupSection .ilFormHeader h3 {
   color: #fff;
@@ -20872,8 +20674,4 @@ img.flexitem_c1_bg {
 }
 .medi-login-container .form-horizontal + p + .ilStartupSection a {
   text-decoration: underline;
-}
-.il_VAccordionHead,
-.il_HAccordionHead {
-  padding: 0px 8px 0px 38px;
 }

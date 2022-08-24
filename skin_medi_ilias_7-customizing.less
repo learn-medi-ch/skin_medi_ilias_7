@@ -47,6 +47,130 @@
 @custom_message_alert-warning_font_color:  @medi_blue_3;
 
 
+
+//mainbar
+
+.il-maincontrols-mainbar {
+  -ms-grid-colums: 140px 400px !important;
+  grid-template-columns: 140px 400px !important;
+  width: 140px !important;
+}
+
+.il-mainbar-triggers .btn-bulky, .il-mainbar-triggers .il-link.link-bulky {
+  height: 140px !important;
+}
+.il-mainbar-triggers {
+  width: 140px !important;
+}
+.icon.small {
+  height: 60px !important;
+  width: 60px !important;
+  line-height: 60px !important;
+}
+.il-maincontrols-mainbar .btn-bulky, .il-maincontrols-metabar .btn-bulky, .il-maincontrols-mainbar .il-link.link-bulky, .il-maincontrols-metabar .il-link.link-bulky {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.il-mainbar-slates {
+  width: 500px;
+}
+.il-maincontrols-slate .btn-bulky .bulky-label, .il-maincontrols-slate .link-bulky .bulky-label {
+  font-size: 2.5rem;
+  margin-left: 15px;
+}
+.il-maincontrols-slate .btn-bulky .bulky-label, .il-maincontrols-slate .link-bulky .bulky-label {
+  line-height: 4rem;
+}
+.il-mainbar-close-slates .btn-bulky .glyph:before {
+  color: white;
+}
+.il-mainbar-close-slates .btn-bulky {
+  background-color: @medi-link-blue;
+}
+.il-mainbar-close-slates .btn-bulky:hover {
+  background-color: @medi_grey_3;
+}
+.jstree-default .jstree-node {
+  font-size: 24px;
+  line-height: 40px;
+}
+.jstree img {
+  width: 40px;
+  height: 40px;
+}
+.il-item .il-item-title {
+  font-size: 100%;
+}
+div.alert ul {
+  font-size: 24px;
+}
+//tools button
+.il-mainbar-tools-button .btn-bulky, .il-mainbar-tools-button .btn-bulky.engaged {
+  height: 60px;
+}
+.il-mainbar-tools-button {
+  height: 120px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+
+//header
+.il-layout-page {
+  -ms-grid-rows: 120px auto 33px 1fr;
+  grid-template-rows: 120px auto 33px 1fr;
+}
+.header-inner {
+  height: 120px;
+}
+header {
+  img {
+    height: 80px;
+  }
+}
+a#il_mhead_t_focus {
+  font-size: 45px;
+}
+.il-maincontrols-metabar > li > .btn-bulky .glyphicon, .il-maincontrols-metabar > li > .link-bulky .glyphicon {
+  font-size: 40px;
+}
+.il-metabar-slates {
+  top:90px;
+}
+
+//breadcrumb
+.breadcrumb_wrapper .breadcrumb {
+  padding-left: 150px;
+}
+.breadcrumb_wrapper .breadcrumb {
+  font-size: 14px;
+}
+
+  //boxes
+.panel .panel-heading.ilHeader h2, .panel .panel-heading.ilBlockHeader h2, .panel .panel-heading.ilHeader h2.ilHeader, .panel .panel-heading.ilBlockHeader h2.ilHeader {
+  font-size: 24px;
+}
+
+.panel .panel-heading.ilHeader h4, .panel .panel-heading.ilBlockHeader h4, .panel .panel-heading.ilHeader h4.ilBlockHeader, .panel .panel-heading.ilBlockHeader h4.ilBlockHeader {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+//header title / icons
+#headerimage {
+  width: 60px;
+  height: 60px;
+  margin-top: 3px;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+//
+
 .header-inner {
   padding: 0 25px;
   background-color: @medi-background;
@@ -60,7 +184,40 @@
   color: @medi-link-blue;
 }
 
+//tabs
+.nav-tabs > li > a {
+  font-size: 18px;
+}
+#ilSubTab > li > a {
+  font-size: 14px;
+}
 
+// button
+.btn {
+  font-size: 18px;
+}
+
+input.btn {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+//repository
+div.ilHeaderAlert {
+  font-size: 75%;
+}
+h2.ilHeader {
+  font-size: 24px;
+}
+div.il_ItemProperties {
+  font-size: 80%
+}
+h1, h2 {
+  height: 3.5em;
+}
+.il-item .il-item-property-name, .il-item-property-value, .panel-secondary .il-item .il-item-description {
+  font-size: 20px !important;
+}
 
 .il-panel-listing-std-container,
 .panel .panel-body,
@@ -70,8 +227,6 @@
 .il-maincontrols-slate .btn-bulky:hover, .il-maincontrols-slate .link-bulky:hover, .il-maincontrols-slate .btn-bulky.engaged, .il-maincontrols-slate .link-bulky.engaged {
   background-color: @medi-darker-background;
 }
-
-
 .il-item {
   background-color: @medi-column-background !important;
   border-bottom: 2px #fff solid;
@@ -83,6 +238,14 @@
   border-bottom: 2px solid @medi-darker-background;
 }
 
+//forms
+.form-control {
+  height: 40px;
+}
+.form-control {
+  font-size: 26px;
+}
+
 div.il_HeaderInner.media {
   //background: @medi-column-background;
 }
@@ -90,10 +253,7 @@ div.il_HeaderInner.media {
 .il-maincontrols-slate .btn-bulky .icon, .il-maincontrols-slate .link-bulky .icon {
   filter: none;
 }
-div.il_HeaderInner {
- margin-left: 15px;
- margin-right: 15px;
-}
+
 .il-item-group {
   clear: both;
   background-color: @medi-darker-background;
@@ -115,9 +275,8 @@ div.il_HeaderInner {
   color: #fff;
 }
 
-
 body {
-  font-size: 14px !important;
+  font-size: 24px;
   color: #333 !important;
 }
 .breadcrumb_wrapper .breadcrumb {
@@ -283,43 +442,85 @@ div.ilFrame {
 
 .main_flexed {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
 }
 .flexitem_c1 {
-  display: flex;
-  flex-direction: column;
   width: 20%;
   text-align: center;
   position: relative;
 }
-.flexitem_c1 img.flexitem_c1_bg {
-  position: fixed;
-  left: 150px;
-  top: 150px;
+img.flexitem_c1_bg {
+  margin-left: 150px;
+  margin-top: 150px;
   max-height: 500px;
 }
-.flexitem_c1 img.flexitem_c1_logo {
-  position: absolute;
-  top: 150px;
-  right: 10%;
-  width: 410px;
-}
 .flexitem_c2 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-left: 50%;
-  margin-right: 50%;
+  width: 60%;
+}
+.flexitem_c3 {
+  width: 20%;
 }
 
 
+
+@media only screen and (max-width: 1250px) {
+  .flexitem_c1 {
+    display: none;
+  }
+  .flexitem_c2 {
+    width: 100%;
+  }
+  .flexitem_c3 {
+    display: none;
+  }
+  body {
+    background-color: #fff !important;
+  }
+  .medi-login-container .medi-icon-container {
+    margin-top: 0px !important;
+  }
+  .medi-login-container {
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 100% !important;
+  }
+  .col-sm-6 {
+    width: 100%;
+  }
+}
 
 
 .medi-login-container {
+
+  p {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .form-horizontal .help-block {
+    font-size: 30px;
+  }
+
+  .medi-icon-container {
+    padding-top: 40px;
+  }
+
+  .medi-icon {
+    height: 60px;
+    margin-left: 40px;
+    margin-right: 20px;
+  }
+
+  h2.medi-system-label, h2.ilHeader {
+    font-weight: normal;
+    height: 60px;
+    vertical-align: middle;
+    display: inline;
+    font-size: 40px;
+    color: #2c2c2c;
+  }
+
 
   .ilFormFooter .ilFormCmds {
     padding-top: 20px;
@@ -331,10 +532,12 @@ div.ilFrame {
 
   .btn-default {
     font-size: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
     span.reg-links {
-    margin-right: 80px;
+    margin-right: 160px;
     float: right;
     width: 250px;
     margin-top: -0px;
@@ -345,12 +548,13 @@ div.ilFrame {
     }
   }
 
-  margin-top: 400px;
+  margin-top: 25%;
+  margin-left: auto;
+  margin-right: auto;
   width: 800px;
-  height: 650px;
+  height: 800px;
 
   background-color: #fff;
-  position: relative;
 
   input:invalid {
     border-color: @custom_message_alert_danger_border_color;
@@ -441,9 +645,7 @@ div.ilFrame {
   }
 
   div.ilStartupSection {
-    .ilHeader {
-      display: none;
-    }
+
 
 
     .ilFormHeader h3 {
@@ -588,17 +790,10 @@ div.ilFrame {
   }
 }
 
-@media only screen and (max-width: 850px) {
-  .flexitem_c1 {
-    display: none;
-  }
-  .medi-login-container {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .col-sm-6 {
-    width: 100%;
-  }
+
+//accordion
+.il_VAccordionHead, .il_HAccordionHead {
+  padding: 0px 8px 0px 38px;
 }
 
 
