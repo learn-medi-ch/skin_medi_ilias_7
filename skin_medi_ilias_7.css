@@ -13315,7 +13315,7 @@ input[type="file"].form-control {
   height: auto;
 }
 .ilFormHeader {
-  padding: 15px 0 5px;
+  padding: 15px 15px;
 }
 .ilFormHeader .ilFormCmds {
   margin: 0;
