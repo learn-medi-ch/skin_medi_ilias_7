@@ -20283,10 +20283,7 @@ a#il_mhead_t_focus {
   font-size: 26px;
 	font-weight: 600;
 }
-.il-maincontrols-metabar > li > .btn-bulky .glyphicon,
-.il-maincontrols-metabar > li > .link-bulky .glyphicon {
-  font-size: 40px;
-}
+
 .il-metabar-slates {
   top: 90px;
 }
