@@ -9189,7 +9189,7 @@ div.il-system-infos {
   display: flex;
   font-size: 15.988px;
   align-items: flex-end;
-  padding-left: 35px;
+  padding-left: 10px;
   color: #161616;
 }
 .il-header-locator {
@@ -12538,7 +12538,7 @@ h2.ilHeader {
 }
 div.ilHeadAction {
   float: right;
-  margin: 8px 0 5px;
+  margin: 8px 15px;
   /* bottom 5px blog fullscreen */
 }
 [dir="rtl"] div.ilHeadAction {
@@ -20368,7 +20368,7 @@ a#il_mhead_t_focus {
   padding-right: 30px;*/
 }
 .header-inner {
-  padding: 0 25px;
+  padding-left: 15px;
   background-color: #eceff3;
 }
 #block_pditems_0 > div > h2 {
