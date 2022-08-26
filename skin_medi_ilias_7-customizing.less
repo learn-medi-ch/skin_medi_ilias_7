@@ -47,25 +47,25 @@
 @custom_message_alert-warning_font_color:  @medi_blue_3;
 
 
-
-//mainbar
-
 .il-maincontrols-mainbar {
-  -ms-grid-colums: 140px 400px !important;
-  grid-template-columns: 140px 400px !important;
-  width: 140px !important;
+  -ms-grid-colums: 140px 400px;
+  grid-template-columns: 140px 400px;
+  width: 140px;
 }
 
 .il-mainbar-triggers .btn-bulky, .il-mainbar-triggers .il-link.link-bulky {
-  height: 140px !important;
+  height: 140px ;
+}
+.il-layout-page.with-mainbar-slates-engaged .il-maincontrols-mainbar {
+  width: 650px;
 }
 .il-mainbar-triggers {
-  width: 140px !important;
+  width: 140px;
 }
 .icon.small {
-  height: 60px !important;
-  width: 60px !important;
-  line-height: 60px !important;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
 }
 .il-maincontrols-mainbar .btn-bulky, .il-maincontrols-metabar .btn-bulky, .il-maincontrols-mainbar .il-link.link-bulky, .il-maincontrols-metabar .il-link.link-bulky {
   font-size: 1.5rem;
@@ -110,30 +110,100 @@ div.alert ul {
 }
 .il-mainbar-tools-button {
   height: 120px;
-  margin-top: 30px;
-  margin-left: 30px;
+}
+.row {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.ilToolbar .ilToolbarStickyItems {
+  margin-left: 0px;
+}
+#il_center_col {
+  padding-left: 30px;
+}
+div.ilContainerListItemOuter {
+  padding: 0px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#ilSubTab {
+  padding: 0px;
+  margin: 0px;
+}
+#ilSubTab > li > a {
+  padding: 0px;
+}
+.nav > li > a {
+  padding: 0px;
+}
+#ilSubTab {
+  padding-top: 5px;
+  margin-left: 5px;
+  padding-bottom: 5px;
+}
+#ilSubTab > li > a {
+  padding-right: 15px;
+}
+.ilToolbarContainer{
+  margin-left: 5px;
+  margin-top: 15px;
+}
+.ilContainerBlockHeader{
+  margin-left: 5px;
+}
+#il_right_col {
+  padding-left: 35px;
+}
+div.ilAdminRow {
+  margin: 0px;
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+.navbar-brand {
+  padding-top: 15px;
+}
+div.ilHeadAction {
+  margin: 0px;
+}
+div.ilAdminRow {
+  padding-left: 5px;
+}
+.ilToolbar .navbar .navbar-default  {
+  padding-left: 5px !important;
+}
+.ilContainerListItemCB {
+  padding-left: 5px !important;
 }
 
-
+#ilContentContainer {
+  margin-top: 35px;
+}
 //header
-.il-layout-page {
-  -ms-grid-rows: 120px auto 33px 1fr;
-  grid-template-rows: 120px auto 33px 1fr;
-}
+
 .header-inner {
-  height: 120px;
+  height: 60px;
 }
 header {
   img {
-    height: 80px;
+    height: 60px;
   }
 }
 a#il_mhead_t_focus {
   font-size: 45px;
 }
-.il-maincontrols-metabar > li > .btn-bulky .glyphicon, .il-maincontrols-metabar > li > .link-bulky .glyphicon {
-  font-size: 40px;
-}
+
 .il-metabar-slates {
   top:90px;
 }
@@ -158,16 +228,13 @@ a#il_mhead_t_focus {
 
 //header title / icons
 #headerimage {
-  width: 60px;
-  height: 60px;
+  /*
+  width: 40px;
+  height: 40px;
   margin-top: 3px;
+   */
+  display: none;
 }
-
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 
 //
 
@@ -187,9 +254,18 @@ a#il_mhead_t_focus {
 //tabs
 .nav-tabs > li > a {
   font-size: 18px;
+  padding: 0px;
+  padding-right: 20px;
 }
 #ilSubTab > li > a {
   font-size: 14px;
+}
+
+.ilToolbar.navbar {
+  padding-left: 0px;
+}
+#il_center_col {
+  padding-left: 0px;
 }
 
 // button
@@ -211,9 +287,6 @@ h2.ilHeader {
 }
 div.il_ItemProperties {
   font-size: 80%
-}
-h1, h2 {
-  height: 3.5em;
 }
 .il-item .il-item-property-name, .il-item-property-value, .panel-secondary .il-item .il-item-description {
   font-size: 20px !important;
@@ -243,11 +316,17 @@ h1, h2 {
   height: 40px;
 }
 .form-control {
-  font-size: 26px;
+  font-size: 16px;
 }
 
 div.il_HeaderInner.media {
-  //background: @medi-column-background;
+  padding: 0px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  padding-left: 0px;
+}
+.il-std-item .media .media-body, .il-std-item .media, .il-notification-item .media, .il-notification-item .media .media-body {
+  margin-left: -5px;
 }
 
 .il-maincontrols-slate .btn-bulky .icon, .il-maincontrols-slate .link-bulky .icon {
@@ -284,7 +363,7 @@ body {
 }
 #ilTab {
   padding: 0;
-  margin: 7px 15px 23px;
+  margin: 0px;
   border: 0 none;
   border-bottom: 2px solid #008cd7;
 }
@@ -314,9 +393,9 @@ footer.ilFooter {
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   background-color: #fff;
 }
-
-.nav-tabs > li.active > a {
-  color:#4c6586 !important;
+#ilSubTab > li.active > a, #ilSubTab > li.active > a:hover, #ilSubTab > li.active > a:focus {
+  font-weight: 600;
+  text-decoration: none;
 }
 
 a,p {
@@ -369,7 +448,6 @@ footer {
 
 
 h1, h2 {
-  height: 1.6em;
   font-weight: 400;
   line-height: 1.1;
 }
@@ -380,7 +458,6 @@ h1, h2 {
 .il-mainbar-triggers .btn-bulky, .il-mainbar-triggers .il-link.link-bulky {
   background-color: @medi-darker-background !important;
   border-bottom: 2px solid #fff;
-
 }
 .il-mainbar-triggers .btn-bulky .bulky-label,
 .il-mainbar-triggers .il-link.link-bulky .bulky-label {
@@ -437,6 +514,15 @@ div.ilFrame {
   padding: 0px;
 }
 
+
+.il-layout-page-content {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.ilObjListRow {
+  padding-top: 10px;
+}
 
 //login screen
 
@@ -574,7 +660,7 @@ img.flexitem_c1_bg {
   }
 
   .ilFormHeader {
-    padding-bottom: 30px;
+    padding: 15px 15px;
   }
 
   .alert-danger:first-child {
@@ -788,12 +874,77 @@ img.flexitem_c1_bg {
       text-decoration: underline;
     }
   }
+  .ilContainerBlockHeader {
+    background-color: #ffffff;
+  }
+  h2.ilHeader {
+    font-weight: 600;
+  }
 }
 
+.il-item .il-item-property-name,
+.il-item-property-value,
+.panel-secondary .il-item .il-item-description {
+  font-size: 14px !important;
+}
 
 //accordion
 .il_VAccordionHead, .il_HAccordionHead {
   padding: 0px 8px 0px 38px;
 }
+.breadcrumb_wrapper .breadcrumb {
+  font-weight: 600 !important;
+}
+.ilContainerBlockHeader {
+  background-color: #ffffff !important;
+  padding: 0px;
+  padding-left: 0px;
+}
+div.il-system-infos {
+  padding-left: 10px;
+}
 
+div.il_ContainerListItem {
+  margin-right: 5px;
+}
 
+.nav-tabs > li.active > a {
+  color: @medi-link-blue;
+  font-weight: 600;
+}
+
+.header-inner {
+  padding-left: 15px;
+}
+h1.ilc_heading1_Headline1, div.ilc_text_block_Headline1, body.ilc_text_block_Headline1 {
+  padding-left: 12px;
+}
+h3.il_ContainerItemTitle {
+  font-weight: 600;
+}
+div.ilc_text_block_Standard, body.ilc_text_block_Standard {
+  padding-left: 12px;
+}
+a#il_mhead_t_focus {
+  font-size: 26px;
+  font-weight: 600;
+}
+div.il_HeaderInner {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.panel .panel-heading.ilHeader {
+  background-color: #ffffff !important;
+}
+.breadcrumb_wrapper {
+  background: #ffffff;
+}
+.breadcrumbs {
+  background-color: #ffffff;
+}
+body {
+  font-size: 18px;
+}
+header img {
+  height: 40px;
+}
