@@ -20276,6 +20276,9 @@ div.alert ul {
   margin-right: 0px;
   margin-left: 0px;
 }
+h1.ilHeader {
+  padding: 0px;
+}
 .ilToolbar .ilToolbarStickyItems {
   margin-left: 0px;
 }
@@ -20352,18 +20355,18 @@ div.ilContainerListItemOuter {
 }
 #ilSubTab {
   padding-top: 5px;
-  margin-left: 5px;
   padding-bottom: 5px;
 }
 #ilSubTab > li > a {
-  padding-right: 15px;
+  padding-left: 0px;
+  padding-right: 30px;
 }
 .ilToolbarContainer {
-  margin-left: 5px;
+  margin-left: 0px;
   margin-top: 15px;
 }
 .ilContainerBlockHeader {
-  margin-left: 5px;
+  margin-left: 0px;
 }
 #il_right_col {
   padding-left: 35px;
@@ -20383,15 +20386,26 @@ div.ilAdminRow {
 div.ilHeadAction {
   margin: 0px;
 }
+.il-pagetitle {
+  font-size: 26px;
+}
+h3.il_ContainerItemTitle {
+  font-size: 30px;
+}
+div.il_Description,
+td.il_Description {
+  font-size: 18px;
+}
+/*
 div.ilAdminRow {
   padding-left: 5px;
 }
-.ilToolbar .navbar .navbar-default {
+.ilToolbar .navbar .navbar-default  {
   padding-left: 5px !important;
 }
 .ilContainerListItemCB {
   padding-left: 5px !important;
-}
+}*/
 #ilContentContainer {
   margin-top: 35px;
 }
@@ -20399,7 +20413,7 @@ div.ilAdminRow {
   height: 60px;
 }
 header img {
-  height: 60px;
+  height: 70px;
 }
 a#il_mhead_t_focus {
   font-size: 45px;
@@ -20408,23 +20422,22 @@ a#il_mhead_t_focus {
   top: 90px;
 }
 .breadcrumb_wrapper .breadcrumb {
-  padding-left: 150px;
+  padding-left: 240px;
 }
 .breadcrumb_wrapper .breadcrumb {
-  font-size: 14px;
+  font-size: 20px;
 }
 .panel .panel-heading.ilHeader h2,
 .panel .panel-heading.ilBlockHeader h2,
 .panel .panel-heading.ilHeader h2.ilHeader,
 .panel .panel-heading.ilBlockHeader h2.ilHeader {
-  font-size: 24px;
+  font-size: 18px;
 }
 .panel .panel-heading.ilHeader h4,
 .panel .panel-heading.ilBlockHeader h4,
 .panel .panel-heading.ilHeader h4.ilBlockHeader,
 .panel .panel-heading.ilBlockHeader h4.ilBlockHeader {
   font-size: 24px;
-  font-weight: 600;
 }
 #headerimage {
   /*
@@ -20444,13 +20457,45 @@ a#il_mhead_t_focus {
 #block_pdmem_0 > div > h2 {
   color: #008cd7;
 }
+.nav-tabs > li:hover,
+.nav-tabs > li:focus {
+  background-color: #eceff3;
+}
+.nav-tabs > li:hover > a,
+.nav-tabs > li:focus > a {
+  color: #008cd7 !important;
+}
+.nav-tabs > li.active > a:hover {
+  color: #333 !important;
+  background-color: transparent;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus {
+  background-color: transparent;
+  color: #008cd7;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover {
+  border-bottom: 4px solid #008cd7;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  color: #333 !important;
+  background-color: transparent;
+}
 .nav-tabs > li > a {
-  font-size: 18px;
-  padding: 0px;
+  font-size: 26px;
+  padding-left: 20px;
   padding-right: 20px;
 }
 #ilSubTab > li > a {
-  font-size: 14px;
+  font-size: 18px;
+}
+.il-maincontrols-mainbar .btn-bulky,
+.il-maincontrols-metabar .btn-bulky,
+.il-maincontrols-mainbar .il-link.link-bulky,
+.il-maincontrols-metabar .il-link.link-bulky {
+  font-size: 18px;
 }
 .ilToolbar.navbar {
   padding-left: 0px;
@@ -20458,7 +20503,13 @@ a#il_mhead_t_focus {
 #il_center_col {
   padding-left: 0px;
 }
+.ilTabsContentOuter {
+  padding-left: 0px;
+}
 .btn {
+  font-size: 20px;
+}
+div.ilHeaderDesc {
   font-size: 18px;
 }
 input.btn {
@@ -20469,7 +20520,10 @@ div.ilHeaderAlert {
   font-size: 75%;
 }
 h2.ilHeader {
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 div.il_ItemProperties {
   font-size: 80%;
@@ -20543,7 +20597,8 @@ div.il_HeaderInner.media {
   color: #fff;
 }
 body {
-  font-size: 24px;
+  font-family: Univers47, Arial, sans-serif;
+  font-size: 20px;
   color: #333 !important;
 }
 .breadcrumb_wrapper .breadcrumb {
@@ -20553,7 +20608,7 @@ body {
   padding: 0;
   margin: 0px;
   border: 0 none;
-  border-bottom: 2px solid #008cd7;
+  border-bottom: 2px solid #e0e0de;
 }
 .btn-default {
   color: #FFFFFF;
@@ -20574,11 +20629,6 @@ footer.ilFooter {
 .il-maincontrols-footer .il-footer-links li a,
 .il-maincontrols-footer .il-footer-links li button {
   color: #333 !important;
-}
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-  background-color: #fff;
 }
 #ilSubTab > li.active > a,
 #ilSubTab > li.active > a:hover,
@@ -20657,7 +20707,7 @@ a {
   color: #008cd7 !important;
 }
 #ilSubTab > li.active > a {
-  color: #008cd7 !important;
+  color: #333 !important;
 }
 body > div.il-layout-page.with-mainbar-slates-engaged > main > footer > div > div > div.il-footer-links a {
   color: #747474 !important;
@@ -20667,6 +20717,10 @@ div.ilFrame {
 }
 .il-layout-page {
   background-color: #fff !important;
+}
+.il-layout-page {
+  -ms-grid-rows: 90px auto 50px 1fr;
+  grid-template-rows: 90px auto 50px 1fr;
 }
 .il-multi-line-cap-3:after {
   background: none;
@@ -20678,8 +20732,9 @@ div.ilFrame {
   padding: 0px;
 }
 .il-layout-page-content {
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .ilObjListRow {
   padding-top: 10px;
@@ -20983,23 +21038,29 @@ img.flexitem_c1_bg {
 .il_HAccordionHead {
   padding: 0px 8px 0px 38px;
 }
-.breadcrumb_wrapper .breadcrumb {
-  font-weight: 600 !important;
-}
 .ilContainerBlockHeader {
   background-color: #ffffff !important;
   padding: 0px;
   padding-left: 0px;
+}
+.ilObjListRow {
+  border-bottom: 2px solid #e0e0de;
+  display: grid;
+  min-height: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.ilObjListRow:hover {
+  background-color: #eceff3;
+}
+div.ilContainerListItemIcon {
+  padding-right: 5px;
 }
 div.il-system-infos {
   padding-left: 10px;
 }
 div.il_ContainerListItem {
   margin-right: 5px;
-}
-.nav-tabs > li.active > a {
-  color: #008cd7;
-  font-weight: 600;
 }
 .header-inner {
   padding-left: 15px;
@@ -21009,20 +21070,19 @@ div.ilc_text_block_Headline1,
 body.ilc_text_block_Headline1 {
   padding-left: 12px;
 }
-h3.il_ContainerItemTitle {
-  font-weight: 600;
-}
 div.ilc_text_block_Standard,
 body.ilc_text_block_Standard {
   padding-left: 12px;
 }
 a#il_mhead_t_focus {
-  font-size: 26px;
-  font-weight: 600;
+  font-size: 40px;
 }
 div.il_HeaderInner {
   padding-top: 15px;
   padding-left: 15px;
+}
+.header-inner {
+  height: 90px;
 }
 .panel .panel-heading.ilHeader {
   background-color: #ffffff !important;
@@ -21037,5 +21097,9 @@ body {
   font-size: 18px;
 }
 header img {
-  height: 40px;
+  height: 70px;
+  padding-left: 20px;
+}
+.nav-tabs > li {
+  margin-bottom: -4px;
 }
