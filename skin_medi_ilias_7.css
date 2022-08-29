@@ -20499,6 +20499,9 @@ a#il_mhead_t_focus {
   width: 40px;
   line-height: 40px;
 }
+.il-mainbar-tools-button {
+  height: revert;
+}
 .media-left,
 .media-right,
 .media-body {
