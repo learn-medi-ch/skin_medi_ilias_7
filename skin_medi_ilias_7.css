@@ -20202,19 +20202,19 @@ with the il- variable set here.
 /** contrast threshold for contrast color **/
 /** three color variants for neutral, important, breaking Head Infos **/
 .il-maincontrols-mainbar {
-  -ms-grid-colums: 140px 400px;
-  grid-template-columns: 140px 400px;
-  width: 140px;
+  -ms-grid-colums: 145px 630px;
+  grid-template-columns: 145px 630px;
+  width: 145px;
 }
 .il-mainbar-triggers .btn-bulky,
 .il-mainbar-triggers .il-link.link-bulky {
-  height: 140px ;
+  height: 145px ;
 }
 .il-layout-page.with-mainbar-slates-engaged .il-maincontrols-mainbar {
-  width: 650px;
+  width: 700px;
 }
 .il-mainbar-triggers {
-  width: 140px;
+  width: 145px;
 }
 .icon.small {
   height: 40px;
@@ -20229,16 +20229,48 @@ with the il- variable set here.
   line-height: 2.5rem;
 }
 .il-mainbar-slates {
-  width: 500px;
+  width: 630px;
 }
 .il-maincontrols-slate .btn-bulky .bulky-label,
 .il-maincontrols-slate .link-bulky .bulky-label {
-  font-size: 2.5rem;
+  font-size: 30px;
   margin-left: 15px;
 }
 .il-maincontrols-slate .btn-bulky .bulky-label,
 .il-maincontrols-slate .link-bulky .bulky-label {
   line-height: 4rem;
+}
+.il-maincontrols-slate .link-bulky {
+  padding: 20px 10px 15px 55px;
+  height: 90px;
+}
+.il-maincontrols-slate .btn-bulky {
+  padding: 20px 40px 15px 25px;
+  height: 90px;
+}
+.panel-secondary .panel-body .il-item-group .il-item {
+  padding-left: 65px;
+}
+#il_right_col .panel-body {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.jstree-default .jstree-icon:empty {
+  margin-top: 3px;
+}
+.ilExplorerContainer {
+  min-height: 90px;
+  padding-top: 20px;
+}
+.panel .panel-body {
+  padding: 0px;
+}
+#il_expl2_jstree_cont_rep_exp {
+  padding-left: 55px !important;
+}
+.il-maincontrols-slate-content .jstree-default li.jstree-node {
+  margin-left: 30px;
+  padding: 0px 0px;
 }
 .il-mainbar-close-slates .btn-bulky .glyph:before {
   color: white;
@@ -20254,8 +20286,11 @@ with the il- variable set here.
   line-height: 40px;
 }
 .jstree img {
-  width: 40px;
-  height: 40px;
+  width: 30px !important;
+  height: 30px!important;
+  line-height: 30px !important;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .il-item .il-item-title {
   font-size: 100%;
@@ -20265,10 +20300,29 @@ div.alert ul {
 }
 .il-mainbar-tools-button .btn-bulky,
 .il-mainbar-tools-button .btn-bulky.engaged {
-  height: 60px;
+  width: 100%;
+  height: 100%;
 }
 .il-mainbar-tools-button {
-  height: 120px;
+  border-bottom: 3.2px solid #fff;
+}
+.btn .btn-bulky .disengaged,
+.il-mainbar-tools-button .btn-bulky {
+  background-color: #e0e0de;
+}
+.il-mainbar-tools-button .btn-bulky.engaged {
+  background-color: #cdcdca;
+}
+.il-mainbar-tools-button {
+  height: 145px !important;
+}
+.il-mainbar-tools-button .btn-bulky,
+.il-mainbar-tools-button .btn-bulky.engaged {
+  color: #333;
+}
+.il-mainbar-tools-button .btn-bulky .icon,
+.il-mainbar-tools-button .btn-bulky.engaged .icon {
+  filter: none;
 }
 .row {
   padding-right: 0px;
@@ -20354,9 +20408,9 @@ div.ilContainerListItemOuter {
   padding: 0px;
 }
 #ilSubTab {
-  padding-top: 5px;
+  padding-top: 10px;
   padding-bottom: 5px;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 #ilSubTab > li > a {
   padding-left: 0px;
@@ -20370,10 +20424,10 @@ div.ilContainerListItemOuter {
   margin-left: 0px;
 }
 .ilContainerBlock {
-  margin-bottom: 56.25px;
+  margin-bottom: 55px;
 }
 #il_right_col {
-  padding-left: 35px;
+  padding-left: 7%;
 }
 div.ilAdminRow {
   margin: 0px;
@@ -20393,15 +20447,13 @@ div.ilHeadAction {
 .il-pagetitle {
   font-size: 26px;
   font-weight: normal;
+  padding-left: 55px;
 }
 div.ilHeaderAlert {
   font-size: 18px !important;
 }
 ul.dropdown-menu > li > .btn {
   font-size: 18px !important;
-}
-.dropdown-menu {
-  top: revert;
 }
 .il-maincontrols-footer {
   font-size: 18px;
@@ -20439,7 +20491,7 @@ a#il_mhead_t_focus {
   top: 90px;
 }
 .breadcrumb_wrapper .breadcrumb {
-  padding-left: 240px;
+  padding-left: 160px;
 }
 .breadcrumb_wrapper .breadcrumb {
   font-size: 20px;
@@ -20490,7 +20542,7 @@ a#il_mhead_t_focus {
   background-color: #fff;
   border-bottom: 2px solid #e0e0de;
   display: grid;
-  min-height: 88px;
+  min-height: 55px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -20505,7 +20557,8 @@ a#il_mhead_t_focus {
 .media-left,
 .media-right,
 .media-body {
-  padding-top: 2px;
+  vertical-align: top;
+  line-height: 40px;
 }
 .nav-tabs > li:hover,
 .nav-tabs > li:focus {
@@ -20541,11 +20594,13 @@ a#il_mhead_t_focus {
 #ilSubTab > li > a {
   font-size: 18px;
 }
-.il-maincontrols-mainbar .btn-bulky,
-.il-maincontrols-metabar .btn-bulky,
-.il-maincontrols-mainbar .il-link.link-bulky,
-.il-maincontrols-metabar .il-link.link-bulky {
-  font-size: 18px;
+.il-maincontrols-slate-content .il-maincontrols-slate .disengaged .bulky-label,
+.il-maincontrols-slate-content .il-maincontrols-slate-content .bulky-label {
+  font-size: 24px !important;
+}
+.il-maincontrols-slate .btn-bulky .bulky-label,
+.il-maincontrols-slate .link-bulky .bulky-label {
+  line-height: 30px;
 }
 .ilToolbar.navbar {
   padding-left: 0px;
@@ -20573,9 +20628,6 @@ h2.ilHeader {
   font-size: 20px;
   padding-left: 20px;
 }
-div.il_ItemProperties {
-  font-size: 80%;
-}
 .il-item .il-item-property-name,
 .il-item-property-value,
 .panel-secondary .il-item .il-item-description {
@@ -20596,15 +20648,18 @@ div.il_ItemProperties {
   background-color: #fff !important;
   border-bottom: 2px #fff solid;
 }
+.ilDashboardMainContent .col-md-6 {
+  width: 100%;
+}
 .panel {
   margin-bottom: 0px;
-  border-bottom: 2px solid #e0e0de;
+  border-bottom: none;
 }
 .form-control {
   height: 40px;
 }
 .form-control {
-  font-size: 16px;
+  font-size: 18px;
 }
 div.il_HeaderInner.media {
   padding: 0px;
@@ -20657,12 +20712,14 @@ body {
   border: 0 none;
   border-bottom: 2px solid #e0e0de;
 }
+.btn-primary,
 .btn-default {
   color: #FFFFFF;
   background-color: #008cd7;
   outline-color: initial !important;
   border-color: transparent;
 }
+.btn-primary:hover,
 .btn-default:hover {
   background-color: #2f2f2f;
 }
@@ -20752,6 +20809,7 @@ a {
 }
 .breadcrumb_wrapper .breadcrumb span.crumb a {
   color: #008cd7 !important;
+  vertical-align: top;
 }
 #ilSubTab > li.active > a {
   color: #333 !important;
@@ -20766,8 +20824,8 @@ div.ilFrame {
   background-color: #fff !important;
 }
 .il-layout-page {
-  -ms-grid-rows: 90px auto 56.25px 1fr;
-  grid-template-rows: 90px auto 56.25px 1fr;
+  -ms-grid-rows: 90px auto 55px 1fr;
+  grid-template-rows: 90px auto 55px 1fr;
 }
 .il-multi-line-cap-3:after {
   background: none;
@@ -20780,11 +20838,15 @@ div.ilFrame {
 }
 .il-layout-page-content {
   padding-top: 33px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 9.1%;
+  padding-right: 9.1%;
 }
 .ilObjListRow {
   padding-top: 10px;
+}
+.form-horizontal .help-block {
+  font-size: 18px;
+  color: #747474;
 }
 .main_flexed {
   display: flex;
@@ -20807,6 +20869,65 @@ img.flexitem_c1_bg {
 .flexitem_c3 {
   width: 20%;
 }
+.form-horizontal label,
+.form-horizontal .control-label {
+  padding-right: 20px;
+  font-size: 24px !important;
+  line-height: 30px;
+}
+.form-horizontal .control-label {
+  line-height: 24px;
+}
+.form-horizontal div.radio label.radio-inline {
+  line-height: 34px;
+}
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"] {
+  vertical-align: text-top;
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  padding-top: revert;
+  margin-top: revert;
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: revert;
+  text-align: revert;
+  padding-left: revert;
+  line-height: revert;
+  display: revert;
+  margin-left: -20px;
+  margin-top: revert;
+  min-width: revert;
+}
+.ilFormHeader {
+  padding: 0px;
+}
+.ilFormHeader {
+  height: 55px;
+}
+.ilFormHeader .ilHeader {
+  padding: 15px 15px;
+}
+.ilFormHeader .ilFormCmds {
+  padding-top: 10px;
+  padding-right: 15px;
+}
 @media only screen and (max-width: 1250px) {
   .flexitem_c1 {
     display: none;
@@ -20827,9 +20948,6 @@ img.flexitem_c1_bg {
     margin-left: 0px;
     margin-right: 0px;
     height: 100% !important;
-  }
-  .col-sm-6 {
-    width: 100%;
   }
 }
 .medi-login-container {
@@ -20899,9 +21017,6 @@ img.flexitem_c1_bg {
 .medi-login-container .ilFormRequired,
 .medi-login-container .asterisk {
   display: none;
-}
-.medi-login-container .ilFormHeader {
-  padding: 15px 15px;
 }
 .medi-login-container .alert-danger:first-child {
   margin-bottom: 5px;
@@ -21076,10 +21191,13 @@ img.flexitem_c1_bg {
 .medi-login-container h2.ilHeader {
   font-weight: 600;
 }
+.il-item .il-item-description,
 .il-item .il-item-property-name,
 .il-item-property-value,
-.panel-secondary .il-item .il-item-description {
-  font-size: 14px !important;
+.panel-secondary .il-item .il-item-description,
+div.il_ItemProperties {
+  color: #333;
+  font-size: 18px !important;
 }
 .il_VAccordionHead,
 .il_HAccordionHead {
@@ -21088,7 +21206,7 @@ img.flexitem_c1_bg {
 .ilContainerBlockHeader {
   background-color: #e0e0de;
   padding: 15px 0px;
-  height: 56.25px;
+  height: 55px;
 }
 .panel-flex .panel-heading .dropdown {
   background-color: #e0e0de;
@@ -21101,7 +21219,7 @@ img.flexitem_c1_bg {
 .panel .panel-heading.ilBlockHeader h4.ilBlockHeader {
   padding-left: 20px;
   font-size: 20px;
-  height: 56.25px;
+  height: 55px;
   background: #e0e0de;
 }
 .panel-secondary .panel-heading.ilHeader h4 {
@@ -21111,12 +21229,32 @@ img.flexitem_c1_bg {
 .panel-secondary .panel-heading.ilHeader {
   padding: 0px;
 }
-.panel .panel-body {
-  padding: 10px 15px;
+.panel-secondary .panel-body .il-item-group:first-child,
+.panel-secondary .panel-body .il-item-group {
+  margin: 0px;
+}
+.jstree.jstree-default a {
+  color: #008cd7 !important;
+}
+.il-item .il-item-title .btn-link,
+.il-item .il-item-title a {
+  font-size: 24px;
+  line-height: 40px;
 }
 .panel-flex .il-viewcontrol-pagination,
 .panel-flex .il-viewcontrol-section {
   background-color: #fff;
+}
+.il-maincontrols-slate .btn-bulky.engaged::before,
+.il-maincontrols-slate .link-bulky.engaged::before,
+.il-maincontrols-slate .btn-bulky.disengaged::before,
+.il-maincontrols-slate .link-bulky.disengaged::before {
+  position: revert;
+  right: revert;
+  top: revert;
+  padding-top: 10px;
+  padding-right: 30px;
+  width: 15px;
 }
 table.calmini tr:nth-child(even) {
   background-color: #fff;
@@ -21135,6 +21273,20 @@ table.calmini tr:nth-child(even) {
 }
 .il-item .il-item-title {
   font-size: 30px;
+}
+.il-maincontrols-slate-content .il-maincontrols-slate .link-bulky {
+  padding: 10px 10px 15px 55px;
+  height: 55px;
+}
+.il-maincontrols-slate-content .il-maincontrols-slate .disengaged .bulky-label,
+.il-maincontrols-slate-content .il-maincontrols-slate-content .bulky-label {
+  font-size: 24px !important;
+}
+.il-maincontrols-slate-content .il-maincontrols-slate .disengaged .icon.small,
+.il-maincontrols-slate-content .il-maincontrols-slate-content .icon.small {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
 }
 table.calmini tr,
 table.calmini td,
@@ -21219,9 +21371,9 @@ table.calmini th.calminiweek {
 }
 @media (min-width: 768px) {
   .col-sm-9 {
-    width: 80.9%;
+    width: 75%;
   }
   .col-sm-3 {
-    width: 19.1%;
+    width: 25%;
   }
 }
