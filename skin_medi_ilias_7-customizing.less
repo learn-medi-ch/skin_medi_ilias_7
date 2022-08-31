@@ -90,6 +90,12 @@
   padding: 20px 40px 15px 25px;
   height: 90px;
 }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: normal;
+}
+body {
+  line-height: normal;
+}
 
 .panel-secondary .panel-body .il-item-group .il-item {
   padding-left: 65px;
@@ -148,6 +154,10 @@
 div.alert ul {
   font-size: 24px;
 }
+.alert {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 .il-mainbar-tools-button .btn-bulky, .il-mainbar-tools-button .btn-bulky.engaged {
   width: 100%;
   height: 100%;
@@ -177,6 +187,9 @@ div.alert ul {
   padding-left: 0px;
   margin-right: 0px;
   margin-left: 0px;
+}
+h1 {
+  letter-spacing: normal;
 }
 h1.ilHeader {
   padding: 0px;
@@ -220,7 +233,7 @@ div.ilContainerListItemOuter {
   padding-left: 0px;
   padding-right: 30px;
 }
-.ilToolbarContainer{
+.ilToolbarContainer- {
   margin-left: 0px;
   margin-top: 15px;
 }
@@ -270,6 +283,15 @@ div.il_Description, td.il_Description {
   font-size: 18px;
 }
 
+div.ilInfoScreenSec h2.ilHeader {
+  /* margin-bottom: 5px; */
+  display: block;
+  background: @medi-column-background;
+  height: 55px;
+  padding: 15px;
+  margin-top: 35px;
+}
+
 /*
 div.ilAdminRow {
   padding-left: 5px;
@@ -308,6 +330,7 @@ a#il_mhead_t_focus {
 }
 .breadcrumb_wrapper .breadcrumb {
   font-size: 20px;
+  padding-top: 5px;
 }
 
   //boxes
@@ -450,12 +473,16 @@ input.btn {
   padding-right: 15px;
 }
 
+div.ilProfile {
+  margin: 0px;
+}
+
 //repository
 div.ilHeaderAlert {
   font-size: 75%;
 }
 h2.ilHeader {
-  font-size: 20px;
+  font-size: 24px;
   padding-left: 20px;
 }
 
@@ -607,11 +634,20 @@ h5, h6, p {
 h1 {
   color: #333;
   font-family: Univers47,Arial,sans-serif  !important;
-  font-size: 2rem;
-  letter-spacing: .5px;
+  font-size: 40px !important;
+  letter-spacing: normal;
   margin-bottom: 10px;
   margin-top: 20px;
   text-transform: uppercase;
+}
+
+.il_InfoScreenProperty {
+  color: @medi-font-black;
+  font-size: 24px;
+  font-style: normal;
+}
+.il_InfoScreenPropertyValue {
+  font-size: 24px;
 }
 
 body {
@@ -716,104 +752,55 @@ div.ilFrame {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
+  padding-top: 5%;
 }
 .flexitem_c1 {
   width: 20%;
-  text-align: center;
-  position: relative;
 }
 img.flexitem_c1_bg {
-  margin-left: 150px;
-  margin-top: 150px;
+  padding-left: 30%;
+  position: relative;
   max-height: 500px;
 }
 .flexitem_c2 {
-  width: 60%;
+  width: 80%;
 }
 .flexitem_c3 {
-  width: 20%;
+  display: none;
 }
-.form-horizontal label,
-.form-horizontal .control-label {
-  padding-right: 20px;
-  font-size: 24px !important;
-  line-height: 30px;
-}
-.form-horizontal .control-label {
-  line-height: 24px;
-}
-.form-horizontal div.radio label.radio-inline {
-  line-height: 34px;
-}
-input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus,
-.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-}
-.radio input[type="radio"], .radio-inline input[type="radio"] {
-  vertical-align: text-top;
-}
-.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
-  padding-top: revert;
-  margin-top: revert;
-}
-.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
-  position: revert;
-  text-align:  revert;
-  padding-left: revert;
-  line-height:  revert;
-  display:  revert;
-  margin-left: -20px;
-  margin-top:  revert;
-  min-width: revert;
-}
-
-.ilFormHeader {
-  padding: 0px;
-
-}
-
-
-
-.ilFormHeader {
-height: 55px;
-  .ilHeader {
-    padding: 15px 15px;
-  }
-.ilFormCmds {
-  padding-top: 10px;
-  padding-right: 15px;
-}
-}
-
-@media only screen and (max-width: 1250px) {
-  .flexitem_c1 {
-    display: none;
-  }
-  .flexitem_c2 {
-    width: 100%;
-  }
-  .flexitem_c3 {
-    display: none;
-  }
-  body {
-    background-color: #fff !important;
-  }
-  .medi-login-container .medi-icon-container {
-    margin-top: 0px !important;
-  }
-  .medi-login-container {
-    margin-left: 0px;
-    margin-right: 0px;
-    height: 100% !important;
-  }
-
-}
-
 
 
 
 .medi-login-container {
+  margin-left: 20%;
+  width: 50%;
+  height: 90%;
+  background-color: white;
+
+
+
+  .ilStartupSection {
+    background-color: #fff;
+    padding: 4.5% 7%;
+    .medi-icon-container {
+      margin-top: 0px !important;
+      margin-bottom: 20%;
+    }
+  }
+
+  span.reg-links {
+    padding-top: 35px;
+    font-size: 30px;
+    a {
+      width: 100%;
+      display: list-item;
+      list-style-position: inside;
+      list-style-type: none;
+      color: @medi-link-blue;
+      text-decoration: underline;
+    }
+  }
+
 
   p {
     margin: 20px;
@@ -824,13 +811,9 @@ height: 55px;
     font-size: 30px;
   }
 
-  .medi-icon-container {
-    padding-top: 40px;
-  }
 
   .medi-icon {
     height: 60px;
-    margin-left: 40px;
     margin-right: 20px;
   }
 
@@ -848,6 +831,7 @@ height: 55px;
     padding-top: 20px;
   }
 
+
   .form-control {
     font-size: 30px;
   }
@@ -858,25 +842,8 @@ height: 55px;
     padding-right: 15px;
   }
 
-    span.reg-links {
-    margin-right: 160px;
-    float: right;
-    width: 250px;
-    margin-top: -0px;
-      font-size: 30px;
-    a {
-      color: @medi-link-blue;
-      text-decoration: underline;
-    }
-  }
 
-  margin-top: 25%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 800px;
-  height: 800px;
 
-  background-color: #fff;
 
   input:invalid {
     border-color: @custom_message_alert_danger_border_color;
@@ -924,7 +891,7 @@ height: 55px;
 
   div.ilStartupSection form.form-horizontal {
     background-color: #fff !important;
-    padding: 30px;
+    padding-bottom: 7%;
   }
 
   @media only screen and (min-width: 768px) {
@@ -960,13 +927,16 @@ height: 55px;
 
   }
 
-  .ilFormFooter,
+
   .ilFormHeader {
-    background-color: #fff;
+    display: none;
+  }
+
+  .ilFormFooter {
+    background-color: white !important;
   }
 
   div.ilStartupSection {
-
 
 
     .ilFormHeader h3 {
@@ -990,14 +960,9 @@ height: 55px;
       min-height: 0;
     }
 
-    form input.form-control {
-      width: 100% !important;
-    }
+
   }
 
-  .ilStartupSection {
-    padding-top: 0px;
-  }
 
   //Form Content
   input:invalid {
@@ -1030,7 +995,9 @@ height: 55px;
 
   }
   .ilFormFooter {
-    padding-bottom: 10px;
+    //padding-bottom: 10px;
+    padding: 0px;
+    height: unset;
   }
 
 
@@ -1071,6 +1038,7 @@ height: 55px;
   .form-control, .form-control:focus, input:invalid {
     border-color: @medi_grey_2;
     background-color: @medi_grey_1;
+    width: 100% !important;
   }
 
   .ilFormFooter {
@@ -1111,9 +1079,111 @@ height: 55px;
     background-color: #ffffff;
   }
   h2.ilHeader {
-    font-weight: 600;
+    display: none;
   }
 }
+
+
+.form-horizontal label,
+.form-horizontal .control-label {
+  padding-right: 20px;
+  font-size: 24px !important;
+  line-height: 30px;
+}
+.form-horizontal .control-label {
+  line-height: 24px;
+}
+.form-horizontal div.radio label.radio-inline {
+  line-height: 34px;
+}
+input[type="checkbox"], input[type="radio"],
+input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus,
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+  width: 20px !important;
+  height: 20px !important;
+}
+.radio input[type="radio"], .radio-inline input[type="radio"] {
+  vertical-align: text-top;
+}
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+  padding-top: revert;
+  margin-top: revert;
+}
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+  position: revert;
+  text-align:  revert;
+  padding-left: revert;
+  line-height:  revert;
+  display:  revert;
+  margin-left: -20px;
+  margin-top:  revert;
+  min-width: revert;
+}
+
+.ilFormHeader {
+  padding: 0px;
+
+}
+
+.input-group-btn {
+  padding-right: 15px;
+}
+.ilFormFooter {
+  padding: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  height: 55px;
+}
+
+.ilFormHeader {
+height: 55px;
+  .ilHeader {
+    padding: 15px 15px;
+    display: revert;
+  }
+.ilFormCmds {
+  margin-top: -40px;
+  padding-right: 15px;
+}
+}
+
+@media only screen and (max-width: 1250px) {
+  .flexitem_c1 {
+    display: none;
+  }
+  .flexitem_c2 {
+    width: 100%;
+  }
+  .flexitem_c3 {
+    display: none;
+  }
+  body {
+    background-color: #fff !important;
+  }
+  .medi-login-container .medi-icon-container {
+    margin-top: 0px !important;
+    margin-bottom: 7%;
+  }
+  .medi-login-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+}
+
+
+#current_perma_link {
+  width:  50%  !important;
+}
+
+
+
+
 .il-item .il-item-description,
 .il-item .il-item-property-name,
 .il-item-property-value,
@@ -1127,11 +1197,143 @@ div.il_ItemProperties {
 .il_VAccordionHead, .il_HAccordionHead {
   padding: 0px 8px 0px 38px;
 }
-
+.ilToolbarContainer {
+  margin-top: 35px;
+}
+button.copg-add.dropdown-toggle.btn .glyphicon-plus-sign, button.copg-add.dropdown-toggle.btn:focus .glyphicon-plus-sign, button.copg-add.dropdown-toggle.btn:hover .glyphicon-plus-sign, #copg-editor-help .glyphicon-plus-sign, button.copg-add.dropdown-toggle.btn .il-copg-add-text, button.copg-add.dropdown-toggle.btn:focus .il-copg-add-text, button.copg-add.dropdown-toggle.btn:hover .il-copg-add-text, #copg-editor-help .il-copg-add-text {
+  font-size: 26px;
+}
+button.copg-add.dropdown-toggle.btn, button.copg-add.dropdown-toggle.btn:focus, button.copg-add.dropdown-toggle.btn:hover {
+  height: 55px;
+}
+div.ilTableHeaderTitle,
 .ilContainerBlockHeader {
   background-color: @medi-darker-background;
-  padding: 15px 0px;
+  padding: 15px;
   height: 55px;
+  vertical-align: top;
+}
+.btn-default:hover {
+  border-color: transparent;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  //margin-top: 15px;
+}
+legend.ilTableFilter > a {
+  margin-right: 0px !important;
+  margin-top: 35px !important;
+  margin-bottom: 0px !important;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  padding-top: 5px;
+  background-color: @medi-column-background;
+}
+.navbar-header {
+  padding-left: 15px;
+  padding-top: 5px;
+}
+.navbar-collapse.collapse {
+  height: 55px !important;
+}
+div.ilTableHeaderTitle {
+  //margin-bottom: -35px;
+}
+td.ilFilterOption {
+  padding: 15px;
+}
+fieldset.ilTableFilter {
+  margin: 0px;
+  padding: 0px;
+  padding-right: 15px;
+}
+legend.ilTableFilter {
+  margin: 0px;
+  padding: 0px;
+}
+div.ilTableNav {
+  background-color: @medi-column-background;
+  padding-left: 15px;
+  font-size: 18px;
+}
+div.ilTableCommandRow, div.ilTableCommandRowTop {
+  padding: 10px 15px;
+  height: 55px;
+  background-color: @medi-column-background;
+}
+.ilToolbar li.ilToolbarGroup .navbar-form:first-child, .ilToolbar li.ilToolbarGroup .navbar-text:first-child {
+  margin-left: 5px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  //padding-top: 10px;
+}
+.small {
+  font-size: 18px;
+}
+div.ilTableNav {
+  margin-top: 35px;
+}
+.ilTableOuter {
+  margin-bottom: -35px;
+}
+.ilTableCommandRowTop {
+  padding: 0px !important;
+  padding-bottom: 15px !important;
+  padding-left: 15px !important;
+}
+
+table {
+  font-size: 20px !important;
+  .ilWhiteSpaceNowrap {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .ilLeft {
+    float: right;
+  }
+  .ilRight {
+      text-align: left;
+      direction: rtl;
+      margin-right: 15px;
+      float: left;
+    }
+
+
+
+}
+div.ilFilterOption {
+  padding: 15px;
+}
+table,
+.ilTableFilter {
+  .btn-link {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    min-width: 60px;
+    vertical-align: top;
+    color: #FFFFFF;
+    background-color: @medi-link-blue;
+    outline-color: initial !important;
+    border-color: transparent;
+  }
+
+  .btn-link:hover,
+  .btn-link:focus {
+    background-color: @medi_grey_3;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.ilTableFilter {
+  .btn-link {
+    margin-top: 15px;
+  }
+}
+
+.btn-link {
+  color: @medi-link-blue;
 }
 .panel-flex .panel-heading .dropdown {
   background-color: @medi-darker-background;
@@ -1302,4 +1504,18 @@ table.calmini th.calmini, table.calmini th.calminiweek {
   .col-sm-3 {
     width: 25%;
   }
+}
+
+fieldset.ilTableFilter {
+  background-color: #f2f2f2;
+  padding: 10px 15px;
+  margin: 5px 0 15px 0;
+}
+
+div.ilTableFilterLabel {
+  background-color: #f2f2f2;
+};
+
+h5, h6, p {
+  font-size: 20px;
 }

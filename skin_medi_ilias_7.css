@@ -20248,6 +20248,23 @@ with the il- variable set here.
   padding: 20px 40px 15px 25px;
   height: 90px;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: normal;
+}
+body {
+  line-height: normal;
+}
 .panel-secondary .panel-body .il-item-group .il-item {
   padding-left: 65px;
 }
@@ -20298,6 +20315,10 @@ with the il- variable set here.
 div.alert ul {
   font-size: 24px;
 }
+.alert {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 .il-mainbar-tools-button .btn-bulky,
 .il-mainbar-tools-button .btn-bulky.engaged {
   width: 100%;
@@ -20329,6 +20350,9 @@ div.alert ul {
   padding-left: 0px;
   margin-right: 0px;
   margin-left: 0px;
+}
+h1 {
+  letter-spacing: normal;
 }
 h1.ilHeader {
   padding: 0px;
@@ -20416,7 +20440,7 @@ div.ilContainerListItemOuter {
   padding-left: 0px;
   padding-right: 30px;
 }
-.ilToolbarContainer {
+.ilToolbarContainer- {
   margin-left: 0px;
   margin-top: 15px;
 }
@@ -20465,6 +20489,14 @@ div.il_Description,
 td.il_Description {
   font-size: 18px;
 }
+div.ilInfoScreenSec h2.ilHeader {
+  /* margin-bottom: 5px; */
+  display: block;
+  background: #f2f2f2;
+  height: 55px;
+  padding: 15px;
+  margin-top: 35px;
+}
 /*
 div.ilAdminRow {
   padding-left: 5px;
@@ -20495,6 +20527,7 @@ a#il_mhead_t_focus {
 }
 .breadcrumb_wrapper .breadcrumb {
   font-size: 20px;
+  padding-top: 5px;
 }
 .panel .panel-heading.ilHeader h2,
 .panel .panel-heading.ilBlockHeader h2,
@@ -20621,11 +20654,14 @@ input.btn {
   padding-left: 15px;
   padding-right: 15px;
 }
+div.ilProfile {
+  margin: 0px;
+}
 div.ilHeaderAlert {
   font-size: 75%;
 }
 h2.ilHeader {
-  font-size: 20px;
+  font-size: 24px;
   padding-left: 20px;
 }
 .il-item .il-item-property-name,
@@ -20771,11 +20807,19 @@ p {
 h1 {
   color: #333;
   font-family: Univers47, Arial, sans-serif !important;
-  font-size: 2rem;
-  letter-spacing: 0.5px;
+  font-size: 40px !important;
+  letter-spacing: normal;
   margin-bottom: 10px;
   margin-top: 20px;
   text-transform: uppercase;
+}
+.il_InfoScreenProperty {
+  color: #333;
+  font-size: 24px;
+  font-style: normal;
+}
+.il_InfoScreenPropertyValue {
+  font-size: 24px;
 }
 body {
   color: #333;
@@ -20852,111 +20896,47 @@ div.ilFrame {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
+  padding-top: 5%;
 }
 .flexitem_c1 {
   width: 20%;
-  text-align: center;
-  position: relative;
 }
 img.flexitem_c1_bg {
-  margin-left: 150px;
-  margin-top: 150px;
+  padding-left: 30%;
+  position: relative;
   max-height: 500px;
 }
 .flexitem_c2 {
-  width: 60%;
+  width: 80%;
 }
 .flexitem_c3 {
-  width: 20%;
-}
-.form-horizontal label,
-.form-horizontal .control-label {
-  padding-right: 20px;
-  font-size: 24px !important;
-  line-height: 30px;
-}
-.form-horizontal .control-label {
-  line-height: 24px;
-}
-.form-horizontal div.radio label.radio-inline {
-  line-height: 34px;
-}
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus,
-.radio input[type="radio"],
-.radio-inline input[type="radio"],
-.checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-}
-.radio input[type="radio"],
-.radio-inline input[type="radio"] {
-  vertical-align: text-top;
-}
-.radio input[type="radio"],
-.radio-inline input[type="radio"],
-.checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
-  padding-top: revert;
-  margin-top: revert;
-}
-.radio input[type="radio"],
-.radio-inline input[type="radio"],
-.checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
-  position: revert;
-  text-align: revert;
-  padding-left: revert;
-  line-height: revert;
-  display: revert;
-  margin-left: -20px;
-  margin-top: revert;
-  min-width: revert;
-}
-.ilFormHeader {
-  padding: 0px;
-}
-.ilFormHeader {
-  height: 55px;
-}
-.ilFormHeader .ilHeader {
-  padding: 15px 15px;
-}
-.ilFormHeader .ilFormCmds {
-  padding-top: 10px;
-  padding-right: 15px;
-}
-@media only screen and (max-width: 1250px) {
-  .flexitem_c1 {
-    display: none;
-  }
-  .flexitem_c2 {
-    width: 100%;
-  }
-  .flexitem_c3 {
-    display: none;
-  }
-  body {
-    background-color: #fff !important;
-  }
-  .medi-login-container .medi-icon-container {
-    margin-top: 0px !important;
-  }
-  .medi-login-container {
-    margin-left: 0px;
-    margin-right: 0px;
-    height: 100% !important;
-  }
+  display: none;
 }
 .medi-login-container {
-  margin-top: 25%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 800px;
-  height: 800px;
+  margin-left: 20%;
+  width: 50%;
+  height: 90%;
+  background-color: white;
+}
+.medi-login-container .ilStartupSection {
   background-color: #fff;
+  padding: 4.5% 7%;
+}
+.medi-login-container .ilStartupSection .medi-icon-container {
+  margin-top: 0px !important;
+  margin-bottom: 20%;
+}
+.medi-login-container span.reg-links {
+  padding-top: 35px;
+  font-size: 30px;
+}
+.medi-login-container span.reg-links a {
+  width: 100%;
+  display: list-item;
+  list-style-position: inside;
+  list-style-type: none;
+  color: #008cd7;
+  text-decoration: underline;
 }
 .medi-login-container p {
   margin: 20px;
@@ -20965,12 +20945,8 @@ input[type="checkbox"]:focus,
 .medi-login-container .form-horizontal .help-block {
   font-size: 30px;
 }
-.medi-login-container .medi-icon-container {
-  padding-top: 40px;
-}
 .medi-login-container .medi-icon {
   height: 60px;
-  margin-left: 40px;
   margin-right: 20px;
 }
 .medi-login-container h2.medi-system-label,
@@ -20992,17 +20968,6 @@ input[type="checkbox"]:focus,
   font-size: 30px;
   padding-left: 15px;
   padding-right: 15px;
-}
-.medi-login-container span.reg-links {
-  margin-right: 160px;
-  float: right;
-  width: 250px;
-  margin-top: 0px;
-  font-size: 30px;
-}
-.medi-login-container span.reg-links a {
-  color: #008cd7;
-  text-decoration: underline;
 }
 .medi-login-container input:invalid {
   border-color: #FF194B;
@@ -21034,7 +20999,7 @@ input[type="checkbox"]:focus,
 }
 .medi-login-container div.ilStartupSection form.form-horizontal {
   background-color: #fff !important;
-  padding: 30px;
+  padding-bottom: 7%;
 }
 @media only screen and (min-width: 768px) {
   .medi-login-container .col-sm-6 {
@@ -21061,9 +21026,11 @@ input[type="checkbox"]:focus,
 .medi-login-container #il_prop_cont_username label {
   width: 80%;
 }
-.medi-login-container .ilFormFooter,
 .medi-login-container .ilFormHeader {
-  background-color: #fff;
+  display: none;
+}
+.medi-login-container .ilFormFooter {
+  background-color: white !important;
 }
 .medi-login-container div.ilStartupSection .ilFormHeader h3 {
   color: #fff;
@@ -21082,12 +21049,6 @@ input[type="checkbox"]:focus,
   width: 100%;
   text-transform: uppercase;
   min-height: 0;
-}
-.medi-login-container div.ilStartupSection form input.form-control {
-  width: 100% !important;
-}
-.medi-login-container .ilStartupSection {
-  padding-top: 0px;
 }
 .medi-login-container input:invalid {
   background-color: #FFFFFF;
@@ -21109,7 +21070,8 @@ input[type="checkbox"]:focus,
   padding-bottom: 20px;
 }
 .medi-login-container .ilFormFooter {
-  padding-bottom: 10px;
+  padding: 0px;
+  height: unset;
 }
 .medi-login-container .form-horizontal {
   background-color: #fff !important;
@@ -21157,6 +21119,7 @@ input[type="checkbox"]:focus,
 .medi-login-container input:invalid {
   border-color: #babab1;
   background-color: #f0f0f0;
+  width: 100% !important;
 }
 .medi-login-container .ilFormFooter {
   display: inline-flex;
@@ -21189,7 +21152,108 @@ input[type="checkbox"]:focus,
   background-color: #ffffff;
 }
 .medi-login-container h2.ilHeader {
-  font-weight: 600;
+  display: none;
+}
+.form-horizontal label,
+.form-horizontal .control-label {
+  padding-right: 20px;
+  font-size: 24px !important;
+  line-height: 30px;
+}
+.form-horizontal .control-label {
+  line-height: 24px;
+}
+.form-horizontal div.radio label.radio-inline {
+  line-height: 34px;
+}
+input[type="checkbox"],
+input[type="radio"],
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  width: 20px !important;
+  height: 20px !important;
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"] {
+  vertical-align: text-top;
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  padding-top: revert;
+  margin-top: revert;
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: revert;
+  text-align: revert;
+  padding-left: revert;
+  line-height: revert;
+  display: revert;
+  margin-left: -20px;
+  margin-top: revert;
+  min-width: revert;
+}
+.ilFormHeader {
+  padding: 0px;
+}
+.input-group-btn {
+  padding-right: 15px;
+}
+.ilFormFooter {
+  padding: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  height: 55px;
+}
+.ilFormHeader {
+  height: 55px;
+}
+.ilFormHeader .ilHeader {
+  padding: 15px 15px;
+  display: revert;
+}
+.ilFormHeader .ilFormCmds {
+  margin-top: -40px;
+  padding-right: 15px;
+}
+@media only screen and (max-width: 1250px) {
+  .flexitem_c1 {
+    display: none;
+  }
+  .flexitem_c2 {
+    width: 100%;
+  }
+  .flexitem_c3 {
+    display: none;
+  }
+  body {
+    background-color: #fff !important;
+  }
+  .medi-login-container .medi-icon-container {
+    margin-top: 0px !important;
+    margin-bottom: 7%;
+  }
+  .medi-login-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+#current_perma_link {
+  width: 50%  !important;
 }
 .il-item .il-item-description,
 .il-item .il-item-property-name,
@@ -21203,10 +21267,138 @@ div.il_ItemProperties {
 .il_HAccordionHead {
   padding: 0px 8px 0px 38px;
 }
+.ilToolbarContainer {
+  margin-top: 35px;
+}
+button.copg-add.dropdown-toggle.btn .glyphicon-plus-sign,
+button.copg-add.dropdown-toggle.btn:focus .glyphicon-plus-sign,
+button.copg-add.dropdown-toggle.btn:hover .glyphicon-plus-sign,
+#copg-editor-help .glyphicon-plus-sign,
+button.copg-add.dropdown-toggle.btn .il-copg-add-text,
+button.copg-add.dropdown-toggle.btn:focus .il-copg-add-text,
+button.copg-add.dropdown-toggle.btn:hover .il-copg-add-text,
+#copg-editor-help .il-copg-add-text {
+  font-size: 26px;
+}
+button.copg-add.dropdown-toggle.btn,
+button.copg-add.dropdown-toggle.btn:focus,
+button.copg-add.dropdown-toggle.btn:hover {
+  height: 55px;
+}
+div.ilTableHeaderTitle,
 .ilContainerBlockHeader {
   background-color: #e0e0de;
-  padding: 15px 0px;
+  padding: 15px;
   height: 55px;
+  vertical-align: top;
+}
+.btn-default:hover {
+  border-color: transparent;
+}
+legend.ilTableFilter > a {
+  margin-right: 0px !important;
+  margin-top: 35px !important;
+  margin-bottom: 0px !important;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  padding-top: 5px;
+  background-color: #f2f2f2;
+}
+.navbar-header {
+  padding-left: 15px;
+  padding-top: 5px;
+}
+.navbar-collapse.collapse {
+  height: 55px !important;
+}
+td.ilFilterOption {
+  padding: 15px;
+}
+fieldset.ilTableFilter {
+  margin: 0px;
+  padding: 0px;
+  padding-right: 15px;
+}
+legend.ilTableFilter {
+  margin: 0px;
+  padding: 0px;
+}
+div.ilTableNav {
+  background-color: #f2f2f2;
+  padding-left: 15px;
+  font-size: 18px;
+}
+div.ilTableCommandRow,
+div.ilTableCommandRowTop {
+  padding: 10px 15px;
+  height: 55px;
+  background-color: #f2f2f2;
+}
+.ilToolbar li.ilToolbarGroup .navbar-form:first-child,
+.ilToolbar li.ilToolbarGroup .navbar-text:first-child {
+  margin-left: 5px;
+}
+.small {
+  font-size: 18px;
+}
+div.ilTableNav {
+  margin-top: 35px;
+}
+.ilTableOuter {
+  margin-bottom: -35px;
+}
+.ilTableCommandRowTop {
+  padding: 0px !important;
+  padding-bottom: 15px !important;
+  padding-left: 15px !important;
+}
+table {
+  font-size: 20px !important;
+}
+table .ilWhiteSpaceNowrap {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+table .ilLeft {
+  float: right;
+}
+table .ilRight {
+  text-align: left;
+  direction: rtl;
+  margin-right: 15px;
+  float: left;
+}
+div.ilFilterOption {
+  padding: 15px;
+}
+table .btn-link,
+.ilTableFilter .btn-link {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+  min-width: 60px;
+  vertical-align: top;
+  color: #FFFFFF;
+  background-color: #008cd7;
+  outline-color: initial !important;
+  border-color: transparent;
+}
+table .btn-link:hover,
+.ilTableFilter .btn-link:hover,
+table .btn-link:focus,
+.ilTableFilter .btn-link:focus {
+  background-color: #2f2f2f;
+  color: #fff;
+  text-decoration: none;
+}
+.ilTableFilter .btn-link {
+  margin-top: 15px;
+}
+.btn-link {
+  color: #008cd7;
 }
 .panel-flex .panel-heading .dropdown {
   background-color: #e0e0de;
@@ -21376,4 +21568,17 @@ table.calmini th.calminiweek {
   .col-sm-3 {
     width: 25%;
   }
+}
+fieldset.ilTableFilter {
+  background-color: #f2f2f2;
+  padding: 10px 15px;
+  margin: 5px 0 15px 0;
+}
+div.ilTableFilterLabel {
+  background-color: #f2f2f2;
+}
+h5,
+h6,
+p {
+  font-size: 20px;
 }
