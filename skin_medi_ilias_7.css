@@ -9093,7 +9093,7 @@ grid-based layout
   -ms-grid-rows: 60px auto 33px 1fr;
   grid-template-rows: 60px auto 33px 1fr;
   height: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   width: 100%;
   hyphens: auto;
   -webkit-hyphens: auto;
@@ -20335,7 +20335,7 @@ div.alert ul {
   background-color: #cdcdca;
 }
 .il-mainbar-tools-button {
-  height: 145px !important;
+  /*height: 145px !important;*/
 }
 .il-mainbar-tools-button .btn-bulky,
 .il-mainbar-tools-button .btn-bulky.engaged {
