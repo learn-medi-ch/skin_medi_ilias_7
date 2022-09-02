@@ -1,0 +1,108 @@
+/* spacing */
+@medi-vh-padding-small: 0.9vh;
+
+@medi-vh-space-large: 9.4vh;
+@medi-vh-space-middle: 5.9vh;
+@medi-vh-space-small: 3.7vh;
+
+@medi-vw-padding-small: 0.9vw;
+
+@medi-vw-space-large: 24vw;
+@medi-vw-space-middle: 5.9vw;
+@medi-vw-space-small: 3.7vw;
+
+@medi-icon-small: calc(@medi-vh-space-middle - @medi-vh-padding-small - @medi-vh-padding-small);
+
+.il-layout-page {
+  -ms-grid-rows: @medi-vh-space-middle auto @medi-vh-space-small 1fr;
+  grid-template-rows: @medi-vh-space-middle auto @medi-vh-space-small 1fr;
+  -ms-grid-columns: @medi-vw-space-middle 1fr;
+  grid-template-columns: @medi-vw-space-middle 1fr;
+}
+.header-inner {
+  height: @medi-vh-space-middle;
+}
+.il-logo {
+  height: @medi-icon-small;
+}
+header img {
+  height: calc(@medi-vh-space-middle - @medi-vh-padding-small - @medi-vh-padding-small);
+  padding-left: @medi-vw-padding-small;
+}
+
+.il-maincontrols-mainbar {
+  -ms-grid-colums: @medi-vw-space-middle @medi-vw-space-large;
+  grid-template-columns: @medi-vw-space-middle @medi-vw-space-large;
+
+  .icon.small {
+    height: @medi-icon-small;
+    width: @medi-icon-small;
+    line-height: @medi-icon-small;
+  }
+}
+.il-mainbar-triggers {
+  width: @medi-vw-space-middle;
+}
+.il-mainbar-triggers .btn-bulky, .il-mainbar-triggers .il-link.link-bulky {
+  height: @medi-vw-space-middle;
+}
+.il-mainbar-slates {
+  width: @medi-vw-space-large;
+}
+.il-layout-page.with-mainbar-slates-engaged {
+  -ms-grid-columns: calc(@medi-vw-space-middle + @medi-vw-space-large) 1fr;
+  grid-template-columns: calc(@medi-vw-space-middle + @medi-vw-space-large) 1fr;
+}
+#mainspacekeeper {
+  padding-top: @medi-vh-space-middle;
+  padding-left: @medi-vw-space-middle;
+  padding-right: @medi-vw-space-middle;
+}
+#il_center_col {
+  padding-top: @medi-vh-space-small;
+}
+#il_right_col {
+  padding-top: @medi-vh-space-small;
+  padding-left: @medi-vw-space-small;
+}
+#headerimage {
+  display: none;
+}
+.breadcrumb_wrapper .breadcrumb {
+  padding-left: @medi-vw-space-middle;
+}
+
+#ilTab {
+  margin-top:@medi-vh-padding-small;
+}
+
+#ilSubTab > li {
+  padding-top: @medi-vh-padding-small;
+  padding-left:  @medi-vw-padding-small;
+  padding-right:  @medi-vw-padding-small;
+}
+.nav-tabs > li > a  {
+  padding-left:  @medi-vw-padding-small;
+  padding-right:  @medi-vw-padding-small;
+}
+
+
+.ilToolbarContainer {
+  margin-top: @medi-vh-space-small;
+}
+.btn {
+  padding-left:  @medi-vw-padding-small;
+  padding-right:  @medi-vw-padding-small;
+}
+.ilContainerBlockHeader {
+  height: @medi-vh-space-middle;
+  line-height: @medi-vh-space-middle;
+  padding-left:  @medi-vw-padding-small;
+}
+.ilObjListRow {
+  padding-right:  @medi-vw-padding-small;
+  padding-left:  @medi-vw-padding-small;
+  height: @medi-vh-space-middle;
+  padding-top:  @medi-vh-padding-small;
+  padding-bottom:  @medi-vh-padding-small;
+}

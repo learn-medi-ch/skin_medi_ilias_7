@@ -1,0 +1,79 @@
+@medi-font-black: #333;
+@medi-white: #fff;
+@medi-link-blue: #008cd7;
+
+@medi-grey: #eceff3;
+@medi-grey-darker: #e0e0de;
+@medi-grey-dark: #cdcdca;
+
+body,
+.il-layout-page {
+  background-color: transparent;
+}
+#ilTab {
+  border-bottom: 2px solid @medi-grey-darker;
+}
+.btn {
+  color: @medi-white;
+}
+.nav-tabs > li > a,
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  background-color: transparent;
+  color: @medi-link-blue;
+  margin-bottom: -4px;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  border-bottom: 4px solid @medi-link-blue;
+}
+.nav-tabs > li:hover, .nav-tabs > li:focus {
+  background-color: @medi-grey-darker;
+}
+#ilSubTab > li.active > a {
+  color: @medi-font-black;
+}
+
+.il-mainbar,
+.il-mainbar-triggers .btn-bulky, .il-mainbar-triggers .il-link.link-bulky,
+.ilContainerBlockHeader,
+.il-maincontrols-slate .btn-bulky:hover, .il-maincontrols-slate .link-bulky:hover, .il-maincontrols-slate .btn-bulky.engaged, .il-maincontrols-slate .link-bulky.engaged
+{
+  background-color: @medi-grey-darker;
+  color: @medi-font-black;
+}
+
+.il-mainbar-triggers .btn-bulky .bulky-label, .il-mainbar-triggers .il-link.link-bulky .bulky-label,
+.il-mainbar-tools-button .btn-bulky, .il-mainbar-tools-button .btn-bulky.engaged {
+  color: @medi-font-black;
+}
+.il-mainbar-triggers .btn-bulky, .il-mainbar-triggers .il-link.link-bulky,
+.il-mainbar-tools-button {
+  border-bottom: 3.2px solid #fff;
+}
+.ilObjListRow:hover {
+  background-color: @medi-grey;
+}
+.il-mainbar-tools-button .btn-bulky.engaged,
+.il-mainbar-triggers .btn-bulky.engaged {
+  background-color: @medi-grey-dark !important;
+}
+.il-maincontrols-slate .btn-bulky .icon, .il-maincontrols-slate .link-bulky .icon,
+.il-mainbar-triggers .il-link.link-bulky .icon,
+.il-mainbar-triggers .btn-bulky .icon {
+  filter: none;
+}
+.btn-default:hover {
+  border-color: transparent;
+}
+.btn-primary,
+.btn-default {
+  color: #FFFFFF;
+  background-color: @medi-link-blue;
+  outline-color: initial !important;
+  border-color: transparent;
+}
+.btn-primary:hover,
+.btn-default:hover,
+.btn-primary:focus,
+.btn-default:focus {
+  background-color: @medi-font-black;
+}
