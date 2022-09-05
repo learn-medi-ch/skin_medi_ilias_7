@@ -1,5 +1,6 @@
 @medi-font-black: #333;
 @medi-white: #fff;
+@medi-blue-light: #d7f1ff;
 @medi-link-blue: #008cd7;
 
 @medi-grey: #eceff3;
@@ -29,12 +30,46 @@ body,
   background-color: @medi-grey-darker;
 }
 #ilSubTab > li.active > a {
-  color: @medi-font-black;
+  color: @medi-font-black !important;
+}
+#ilSubTab > li > a:focus,
+#ilSubTab > li > a:hover {
+  background-color: transparent;
+  color: @medi-font-black !important;
+}
+a,
+.jstree.jstree-default a,
+.breadcrumb_wrapper .breadcrumb span.crumb a
+{
+  color: @medi-link-blue !important;
 }
 
+a:focus,
+a:hover,
+.jstree.jstree-default a:focus,
+.jstree.jstree-default a:hover,
+.breadcrumb_wrapper .breadcrumb span.crumb a:hover,
+.breadcrumb_wrapper .breadcrumb span.crumb a:focus {
+  color: @medi-font-black !important;
+}
+
+.header-inner {
+  background-color: transparent;
+}
+
+h1, h2.medi-system-label, a#il_mhead_t_focus {
+  color: @medi-font-black !important;
+}
+
+.il-panel-listing-std-container,
+header,
+.ilContainerBlockHeader,
+.panel .panel-heading.ilHeader {
+  background-color: @medi-grey;
+  color: @medi-font-black;
+}
 .il-mainbar,
 .il-mainbar-triggers .btn-bulky, .il-mainbar-triggers .il-link.link-bulky,
-.ilContainerBlockHeader,
 .il-maincontrols-slate .btn-bulky:hover, .il-maincontrols-slate .link-bulky:hover, .il-maincontrols-slate .btn-bulky.engaged, .il-maincontrols-slate .link-bulky.engaged
 {
   background-color: @medi-grey-darker;
@@ -61,19 +96,39 @@ body,
 .il-mainbar-triggers .btn-bulky .icon {
   filter: none;
 }
+
+.il-standard-form .il-section-input-header {
+  background-color: transparent;
+}
 .btn-default:hover {
   border-color: transparent;
 }
+.btn-link,
 .btn-primary,
 .btn-default {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   background-color: @medi-link-blue;
   outline-color: initial !important;
   border-color: transparent;
+  text-decoration: none;
 }
+.btn-link:hover,
+.btn-link:focus,
 .btn-primary:hover,
 .btn-default:hover,
 .btn-primary:focus,
 .btn-default:focus {
+  color: #fff  !important;
   background-color: @medi-font-black;
+  text-decoration: none  !important;
+}
+footer {
+  background-color: transparent;
+}
+.ilObjListRow {
+  border-bottom: 3px solid @medi-grey-darker
+}
+
+.nav-tabs > li > a {
+  color: @medi-font-black !important;
 }

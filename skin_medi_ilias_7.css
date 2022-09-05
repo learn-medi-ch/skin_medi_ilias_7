@@ -20304,19 +20304,64 @@ div.ilAdminRow,
 div.ilHeadAction,
 .panel,
 .breadcrumb_wrapper .breadcrumb,
-p {
+p,
+a:hover,
+a:focus,
+.panel-secondary .panel-heading.ilHeader {
   padding: 0;
   margin: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
+  text-decoration: none;
+  border: none;
 }
+/*
+.jstree-hovered,
+.jstree-anchor
+ */
 /** fonts */
 html,
 body {
   color: #333;
-  font-size: 22px;
+  font-size: clamp(1rem, 1vw, 1.6rem);
   font-family: Univers47, Arial, sans-serif;
 }
+.il-maincontrols-slate .btn-bulky.engaged::before,
+.il-maincontrols-slate .link-bulky.engaged::before,
+.il-maincontrols-slate .btn-bulky.disengaged::before,
+.il-maincontrols-slate .link-bulky.disengaged::before,
+.btn-default,
+.btn,
+.il-maincontrols-slate-content > .bulky-label,
+.il-maincontrols-slate .btn-bulky .bulky-label,
+.il-maincontrols-slate .link-bulky .bulky-label,
+.il-maincontrols-mainbar .btn-bulky,
+.il-maincontrols-metabar .btn-bulky,
+.il-maincontrols-mainbar .il-link.link-bulky,
+.il-maincontrols-metabar .il-link.link-bulky,
+.il-item .il-item-property-name,
+.il-item .il-item-property-value,
+.il-maincontrols-footer,
+.help-block,
+.maincontrols-slate-content .il-maincontrols-slate-content .bulky-label,
+.jstree.jstree-default a,
+#search_link,
+label,
+input[type=checkbox],
+input[type=radio],
+select {
+  font-style: normal;
+  color: #333;
+  font-size: 0.8rem !important;
+  text-decoration: none;
+}
+.form-control {
+  min-height: 1.6em;
+}
+.breadcrumb_wrapper .breadcrumb > span + span:before {
+  font-size: 0.8rem;
+}
+.breadcrumb_wrapper .breadcrumb,
 .panel .panel-heading.ilHeader h2,
 .panel .panel-heading.ilBlockHeader h2,
 .panel .panel-heading.ilHeader h2.ilHeader,
@@ -20324,8 +20369,6 @@ body {
 #ilSubTab > li > a,
 div.ilHeaderDesc,
 div.ilHeaderAlert,
-.il-item .il-item-property-name,
-.il-item-property-value,
 .panel-secondary,
 .il-item,
 .il-item-description,
@@ -20355,13 +20398,10 @@ button.copg-add.dropdown-toggle.btn:focus .il-copg-add-text,
 button.copg-add.dropdown-toggle.btn:hover .il-copg-add-text,
 #copg-editor-help .il-copg-add-text,
 .il-item .il-item-description,
-.il-item .il-item-property-name,
-.il-item-property-value,
 .panel-secondary .il-item .il-item-description,
 div.il_Description,
 td.il_Description,
 div.il_ItemProperties,
-.il-maincontrols-footer,
 ul.dropdown-menu > li > .btn,
 div.ilHeaderAlert,
 div.alert ul,
@@ -20369,53 +20409,37 @@ div.alert ul,
 .jstree-default .jstree-node,
 table,
 .il-pagetitle,
-.breadcrumb_wrapper .breadcrumb,
 .panel .panel-heading.ilHeader h4,
 .panel .panel-heading.ilBlockHeader h4,
 .panel .panel-heading.ilHeader h4.ilBlockHeader,
 .panel .panel-heading.ilBlockHeader h4.ilBlockHeader,
 .il-maincontrols-slate-content .il-maincontrols-slate .disengaged .bulky-label,
-.il-maincontrols-slate-content .il-maincontrols-slate-content .bulky-label,
-.btn,
 .il_InfoScreenPropertyValue,
 .il_InfoScreenProperty,
-.form-horizontal .help-block,
 span.reg-links,
-.form-horizontal .help-block,
 .form-control,
-.btn-default,
 .form-horizontal label,
 .form-horizontal .control-label,
 .il-item .il-item-title .btn-link,
-.il-item .il-item-title a,
 .il-item .il-item-title,
-.il-maincontrols-slate-content > .bulky-label,
-.il-maincontrols-slate .btn-bulky .bulky-label,
-.il-maincontrols-slate .link-bulky .bulky-label,
-.il-maincontrols-mainbar .btn-bulky,
-.il-maincontrols-metabar .btn-bulky,
-.il-maincontrols-mainbar .il-link.link-bulky,
-.il-maincontrols-metabar .il-link.link-bulky,
-h3.il_ContainerItemTitle,
-.btn,
 .nav-tabs > li > a,
 h2.ilHeader,
+.il-standard-form .il-section-input-header h2,
 #ilSubTab > li.active > a,
 #ilSubTab > li.active > a:hover,
 #ilSubTab > li.active > a:focus {
   font-style: normal;
   color: #333;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
   text-decoration: none;
 }
-/*
-h2.ilHeader  {
+h2.ilHeader,
+h3.il_ContainerItemTitle {
   font-style: normal;
-  font-size: 1.6rem;
-  line-height: 1.6;
+  color: #333;
+  font-size: 1.4rem;
+  text-decoration: none;
 }
-*/
 h1,
 h2.medi-system-label,
 a#il_mhead_t_focus {
@@ -20427,8 +20451,8 @@ a#il_mhead_t_focus {
 }
 /* spacing */
 .il-layout-page {
-  -ms-grid-rows: 5.9vh auto 3.7vh 1fr;
-  grid-template-rows: 5.9vh auto 3.7vh 1fr;
+  -ms-grid-rows: 5.9vh auto 4.2vh 1fr;
+  grid-template-rows: 5.9vh auto 4.2vh 1fr;
   -ms-grid-columns: 5.9vw 1fr;
   grid-template-columns: 5.9vw 1fr;
 }
@@ -20443,7 +20467,7 @@ header img {
   padding-left: 0.9vw;
 }
 .il-maincontrols-mainbar {
-  -ms-grid-colums: 5.9vw 24vw;
+  -ms-grid-columns: 5.9vw 24vw;
   grid-template-columns: 5.9vw 24vw;
 }
 .il-maincontrols-mainbar .icon.small {
@@ -20451,12 +20475,50 @@ header img {
   width: calc(5.9vh - 0.9vh - 0.9vh);
   line-height: calc(5.9vh - 0.9vh - 0.9vh);
 }
+.il-maincontrols-mainbar .panel-secondary .icon.small {
+  height: calc(calc(5.9vh - 0.9vh - 0.9vh)/2);
+  width: calc(calc(5.9vh - 0.9vh - 0.9vh)/2);
+  line-height: calc(calc(5.9vh - 0.9vh - 0.9vh)/2);
+}
+div[class^="il_editarea"] .ilContainerListItemOuter img,
+img.ilListItemIcon {
+  width: calc(5.9vh - 0.9vh - 0.9vh);
+  height: calc(5.9vh - 0.9vh - 0.9vh);
+  filter: sepia(0.3);
+  max-width: calc(5.9vh - 0.9vh - 0.9vh);
+}
 .il-mainbar-triggers {
   width: 5.9vw;
 }
 .il-mainbar-triggers .btn-bulky,
-.il-mainbar-triggers .il-link.link-bulky {
-  height: 5.9vw;
+.il-mainbar-triggers .il-link.link-bulky,
+.mainbar-triggers .btn-bulky {
+  min-height: 5.9vw;
+  flex-flow: column;
+}
+.il-maincontrols-slate .btn-bulky,
+.il-maincontrols-slate .link-bulky,
+.il-maincontrols-slate .btn-bulky:focus,
+.il-maincontrols-slate .link-bulky:focus,
+.il-maincontrols-slate .btn-bulky:hover,
+.il-maincontrols-slate .link-bulky:hover {
+  padding-left: 0.9vw !important;
+}
+.il-maincontrols-slate-content .il-maincontrols-slate .link-bulky {
+  padding-left: 0.9vw;
+}
+.il-maincontrols-slate-content .il-maincontrols-slate .disengaged .icon.small,
+.il-maincontrols-slate-content .il-maincontrols-slate-content .icon.small {
+  height: calc(calc(5.9vh - 0.9vh - 0.9vh)/2);
+  width: calc(calc(5.9vh - 0.9vh - 0.9vh)/2);
+  line-height: calc(calc(5.9vh - 0.9vh - 0.9vh)/2);
+}
+.il-maincontrols-slate-content .jstree-default li.jstree-node {
+  margin-left: 0.9vh;
+}
+.il-maincontrols-slate .btn-bulky .icon.small,
+.il-maincontrols-slate .link-bulky .icon.small {
+  min-width: 3.7vw;
 }
 .il-mainbar-slates {
   width: 24vw;
@@ -20471,20 +20533,23 @@ header img {
   padding-right: 5.9vw;
 }
 #il_center_col {
-  padding-top: 3.7vh;
+  padding-top: 4.2vh;
 }
 #il_right_col {
-  padding-top: 3.7vh;
+  padding-top: 4.2vh;
   padding-left: 3.7vw;
 }
 #headerimage {
   display: none;
 }
+.breadcrumb_wrapper .breadcrumb span.crumb a:focus {
+  border: none;
+}
 .breadcrumb_wrapper .breadcrumb {
-  padding-left: 5.9vw;
+  padding-left: calc(5.9vw + 0.9vw);
 }
 #ilTab {
-  margin-top: 0.9vh;
+  margin-top: calc(3 * 0.9vh);
 }
 #ilSubTab > li {
   padding-top: 0.9vh;
@@ -20495,24 +20560,161 @@ header img {
   padding-left: 0.9vw;
   padding-right: 0.9vw;
 }
-.ilToolbarContainer {
-  margin-top: 3.7vh;
-}
-.btn {
-  padding-left: 0.9vw;
+.il-maincontrols-slate .btn-bulky.engaged::before,
+.il-maincontrols-slate .link-bulky.engaged::before,
+.il-maincontrols-slate .btn-bulky.disengaged::before,
+.il-maincontrols-slate .link-bulky.disengaged::before {
+  line-height: 4.2vh;
+  width: 0.9vw;
   padding-right: 0.9vw;
 }
+#il_expl2_jstree_cont_out_rep_exp {
+  padding-top: 0.9vh;
+  padding-bottom: 0.9vh;
+  padding-left: calc(2*0.9vw);
+}
+.il-maincontrols-slate-content .panel {
+  padding-left: 0.9vw;
+}
+.btn-link,
+.btn-link:hover,
+.btn-link:focus,
+.btn,
+.btn:hover {
+  padding-left: calc(0.9vw/2) !important;
+  padding-right: calc(0.9vw/2) !important;
+  padding-top: calc(0.9vh/2) !important;
+  padding-bottom: calc(0.9vh/2) !important;
+}
+table .ilWhiteSpaceNowrap {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+table .ilLeft {
+  float: right;
+}
+table .ilRight {
+  text-align: left;
+  direction: rtl;
+  margin-right: 15px;
+  float: left;
+}
+.panel .panel-heading.ilBlockHeader,
 .ilContainerBlockHeader {
+  height: 4.2vh;
+  line-height: 4.2vh;
+  padding-left: 0.9vw;
+  flex-wrap: nowrap;
+}
+.il-standard-form .il-standard-form-header + .il-section-input {
+  margin-top: 0px;
+  padding-left: 0.9vw;
+  padding-top: 0.9vh;
+}
+.il-standard-form-footer,
+.il-standard-form .il-standard-form-header,
+.panel-secondary .panel-heading.ilHeader {
+  padding-left: 0.9vw;
+  padding-right: 0.9vw;
+  padding-top: 0.9vh;
+  padding-bottom: 0.9vh;
+}
+.ilFormFooter,
+.ilFormHeader {
+  padding-top: 0;
   height: 5.9vh;
   line-height: 5.9vh;
   padding-left: 0.9vw;
+  padding-right: 0.9vw;
+  flex-wrap: nowrap;
+}
+input.btn {
+  vertical-align: revert;
+}
+.panel .panel-body,
+.ilDashboardMainContent .il-std-item,
+.ilObjListRow {
+  padding-left: 0.9vw;
+  min-height: 5.9vh;
+  padding-top: 0.9vh;
+  padding-bottom: 0.9vh;
 }
 .ilObjListRow {
   padding-right: 0.9vw;
+}
+.ilToolbarContainer {
+  margin-top: 0.9vh;
+}
+.bulky-label {
+  float: top;
+}
+footer {
   padding-left: 0.9vw;
-  height: 5.9vh;
+  text-align: left;
+}
+.caret {
+  border-top: calc(0.9vw/4) dashed;
+  border-top: 4px solid \9;
+  border-right: calc(0.9vw/4) solid transparent;
+  border-left: calc(0.9vw/4) solid transparent;
+}
+div.il_ContainerItemTitle {
+  line-height: calc(5.9vh - 0.9vh - 0.9vh);
+}
+.il-metabar-slates {
+  top: 5.9vh;
+}
+.alert {
+  margin-top: calc(2*0.9vh);
+  padding: 0.9vh 0.9vw;
+}
+.form-horizontal label,
+.form-horizontal .control-label {
+  padding-right: 20px;
+}
+input[type="checkbox"],
+input[type="radio"],
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  width: 20px !important;
+  height: 20px !important;
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"] {
+  vertical-align: text-top;
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  padding-top: revert;
+  margin-top: revert;
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: revert;
+  text-align: revert;
+  padding-left: revert;
+  display: revert;
+  margin-left: -20px;
+  margin-top: revert;
+  min-width: revert;
+}
+.input-group-btn {
+  padding-right: 15px;
+}
+div.tblfooter.ilContainerListFooter {
+  padding-left: 0.9vw;
+}
+.navbar-brand img {
   padding-top: 0.9vh;
-  padding-bottom: 0.9vh;
 }
 body,
 .il-layout-page {
@@ -20542,12 +20744,44 @@ body,
   background-color: #e0e0de;
 }
 #ilSubTab > li.active > a {
+  color: #333 !important;
+}
+#ilSubTab > li > a:focus,
+#ilSubTab > li > a:hover {
+  background-color: transparent;
+  color: #333 !important;
+}
+a,
+.jstree.jstree-default a,
+.breadcrumb_wrapper .breadcrumb span.crumb a {
+  color: #008cd7 !important;
+}
+a:focus,
+a:hover,
+.jstree.jstree-default a:focus,
+.jstree.jstree-default a:hover,
+.breadcrumb_wrapper .breadcrumb span.crumb a:hover,
+.breadcrumb_wrapper .breadcrumb span.crumb a:focus {
+  color: #333 !important;
+}
+.header-inner {
+  background-color: transparent;
+}
+h1,
+h2.medi-system-label,
+a#il_mhead_t_focus {
+  color: #333 !important;
+}
+.il-panel-listing-std-container,
+header,
+.ilContainerBlockHeader,
+.panel .panel-heading.ilHeader {
+  background-color: #eceff3;
   color: #333;
 }
 .il-mainbar,
 .il-mainbar-triggers .btn-bulky,
 .il-mainbar-triggers .il-link.link-bulky,
-.ilContainerBlockHeader,
 .il-maincontrols-slate .btn-bulky:hover,
 .il-maincontrols-slate .link-bulky:hover,
 .il-maincontrols-slate .btn-bulky.engaged,
@@ -20579,20 +20813,38 @@ body,
 .il-mainbar-triggers .btn-bulky .icon {
   filter: none;
 }
+.il-standard-form .il-section-input-header {
+  background-color: transparent;
+}
 .btn-default:hover {
   border-color: transparent;
 }
+.btn-link,
 .btn-primary,
 .btn-default {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   background-color: #008cd7;
   outline-color: initial !important;
   border-color: transparent;
+  text-decoration: none;
 }
+.btn-link:hover,
+.btn-link:focus,
 .btn-primary:hover,
 .btn-default:hover,
 .btn-primary:focus,
 .btn-default:focus {
+  color: #fff !important;
   background-color: #333;
+  text-decoration: none  !important;
+}
+footer {
+  background-color: transparent;
+}
+.ilObjListRow {
+  border-bottom: 3px solid #e0e0de;
+}
+.nav-tabs > li > a {
+  color: #333 !important;
 }
 /*@import "skin_medi_ilias_7-customizing.less";*/

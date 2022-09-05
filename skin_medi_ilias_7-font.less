@@ -4,8 +4,8 @@
 html,
 body {
   color: @medi-font-black;
-  font-size: 22px;
-  font-family: Univers47, Arial, sans-serif
+  font-size: clamp(1rem, 1vw, 1.6rem);
+  font-family: Univers47, Arial, sans-serif;
 }
 
 @media only screen and (min-width: 2000px) {
@@ -15,12 +15,46 @@ body {
   }
 }
 
+.il-maincontrols-slate .btn-bulky.engaged::before,
+.il-maincontrols-slate .link-bulky.engaged::before,
+.il-maincontrols-slate .btn-bulky.disengaged::before,
+.il-maincontrols-slate .link-bulky.disengaged::before,
+.btn-default,
+.btn,
+.il-maincontrols-slate-content > .bulky-label,
+.il-maincontrols-slate .btn-bulky .bulky-label,
+.il-maincontrols-slate .link-bulky .bulky-label,
+.il-maincontrols-mainbar .btn-bulky,
+.il-maincontrols-metabar .btn-bulky,
+.il-maincontrols-mainbar .il-link.link-bulky,
+.il-maincontrols-metabar .il-link.link-bulky,
+.il-item .il-item-property-name,
+.il-item .il-item-property-value,
+.il-maincontrols-footer,
+.help-block,
+.maincontrols-slate-content .il-maincontrols-slate-content .bulky-label,
+.jstree.jstree-default a,
+#search_link,
+label, input[type=checkbox], input[type=radio], select {
+  font-style: normal;
+  color: @medi-font-black;
+  font-size: 0.8rem !important;
+  text-decoration: none;
+}
+
+.form-control {
+  min-height: 1.6em;
+}
+
+.breadcrumb_wrapper .breadcrumb > span + span:before {
+  font-size: 0.8rem;
+}
+
+.breadcrumb_wrapper .breadcrumb,
 .panel .panel-heading.ilHeader h2, .panel .panel-heading.ilBlockHeader h2, .panel .panel-heading.ilHeader h2.ilHeader, .panel .panel-heading.ilBlockHeader h2.ilHeader,
 #ilSubTab > li > a,
 div.ilHeaderDesc,
 div.ilHeaderAlert,
-.il-item .il-item-property-name,
-.il-item-property-value,
 .panel-secondary,
 .il-item,
 .il-item-description,
@@ -50,12 +84,9 @@ button.copg-add.dropdown-toggle.btn:focus .il-copg-add-text,
 button.copg-add.dropdown-toggle.btn:hover .il-copg-add-text,
 #copg-editor-help .il-copg-add-text,
 .il-item .il-item-description,
-.il-item .il-item-property-name,
-.il-item-property-value,
 .panel-secondary .il-item .il-item-description,
 div.il_Description, td.il_Description,
 div.il_ItemProperties,
-.il-maincontrols-footer,
 ul.dropdown-menu > li > .btn,
 div.ilHeaderAlert,
 div.alert ul,
@@ -63,48 +94,34 @@ div.alert ul,
 .jstree-default .jstree-node,
 table,
 .il-pagetitle,
-.breadcrumb_wrapper .breadcrumb,
 .panel .panel-heading.ilHeader h4, .panel .panel-heading.ilBlockHeader h4, .panel .panel-heading.ilHeader h4.ilBlockHeader, .panel .panel-heading.ilBlockHeader h4.ilBlockHeader,
 .il-maincontrols-slate-content .il-maincontrols-slate .disengaged .bulky-label,
-.il-maincontrols-slate-content .il-maincontrols-slate-content .bulky-label,
-.btn,
 .il_InfoScreenPropertyValue,
 .il_InfoScreenProperty,
-.form-horizontal .help-block,
 span.reg-links,
-.form-horizontal .help-block,
 .form-control,
-.btn-default,
 .form-horizontal label,
 .form-horizontal .control-label,
-.il-item .il-item-title .btn-link, .il-item .il-item-title a,
+.il-item .il-item-title .btn-link,
 .il-item .il-item-title,
-.il-maincontrols-slate-content > .bulky-label,
-.il-maincontrols-slate .btn-bulky .bulky-label,
-.il-maincontrols-slate .link-bulky .bulky-label,
-.il-maincontrols-mainbar .btn-bulky,
-.il-maincontrols-metabar .btn-bulky,
-.il-maincontrols-mainbar .il-link.link-bulky,
-.il-maincontrols-metabar .il-link.link-bulky,
-h3.il_ContainerItemTitle,
-.btn,
 .nav-tabs > li > a,
 h2.ilHeader,
+.il-standard-form .il-section-input-header h2,
 #ilSubTab > li.active > a, #ilSubTab > li.active > a:hover, #ilSubTab > li.active > a:focus {
   font-style: normal;
   color: @medi-font-black;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  //line-height: 1.6;
   text-decoration: none;
 }
-
-/*
-h2.ilHeader  {
+h2.ilHeader,
+h3.il_ContainerItemTitle {
   font-style: normal;
-  font-size: 1.6rem;
-  line-height: 1.6;
+  color: @medi-font-black;
+  font-size: 1.4rem;
+  //line-height: 1.6;
+  text-decoration: none;
 }
-*/
 
 h1,
 h2.medi-system-label,
