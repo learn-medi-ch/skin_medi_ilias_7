@@ -35,7 +35,15 @@ body {
 .maincontrols-slate-content .il-maincontrols-slate-content .bulky-label,
 .jstree.jstree-default a,
 #search_link,
-label, input[type=checkbox], input[type=radio], select {
+label, input[type=checkbox], input[type=radio], select,
+#ilSubTab > li > a,
+#ilSubTab > li.active > a,
+#ilSubTab > li.active > a:hover,
+#ilSubTab > li.active > a:focus,
+.form-control,
+.ilTableFootLight,
+th,
+td {
   font-style: normal;
   color: @medi-font-black;
   font-size: 0.8rem !important;
@@ -43,7 +51,7 @@ label, input[type=checkbox], input[type=radio], select {
 }
 
 .form-control {
-  min-height: 1.6em;
+  min-height: 40px;
 }
 
 .breadcrumb_wrapper .breadcrumb > span + span:before {
@@ -52,13 +60,11 @@ label, input[type=checkbox], input[type=radio], select {
 
 .breadcrumb_wrapper .breadcrumb,
 .panel .panel-heading.ilHeader h2, .panel .panel-heading.ilBlockHeader h2, .panel .panel-heading.ilHeader h2.ilHeader, .panel .panel-heading.ilBlockHeader h2.ilHeader,
-#ilSubTab > li > a,
 div.ilHeaderDesc,
 div.ilHeaderAlert,
 .panel-secondary,
 .il-item,
 .il-item-description,
-.form-control,
 div.ilTableNav,
 .small,
 table,
@@ -99,21 +105,29 @@ table,
 .il_InfoScreenPropertyValue,
 .il_InfoScreenProperty,
 span.reg-links,
-.form-control,
 .form-horizontal label,
 .form-horizontal .control-label,
 .il-item .il-item-title .btn-link,
 .il-item .il-item-title,
 .nav-tabs > li > a,
 h2.ilHeader,
-.il-standard-form .il-section-input-header h2,
-#ilSubTab > li.active > a, #ilSubTab > li.active > a:hover, #ilSubTab > li.active > a:focus {
+.il-standard-form .il-section-input-header h2
+{
   font-style: normal;
   color: @medi-font-black;
   font-size: 1.2rem;
   //line-height: 1.6;
   text-decoration: none;
 }
+
+#il_table_top {
+  font-style: normal;
+  color: @medi-font-black !important;
+  font-size: 1.2rem;
+  //line-height: 1.6;
+  text-decoration: none;
+}
+
 h2.ilHeader,
 h3.il_ContainerItemTitle {
   font-style: normal;

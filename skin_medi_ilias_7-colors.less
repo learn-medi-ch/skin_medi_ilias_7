@@ -9,11 +9,14 @@
 
 body,
 .il-layout-page {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 #ilTab {
-  border-bottom: 2px solid @medi-grey-darker;
+  border-bottom: 3px solid @medi-grey-darker;
 }
+
+
+
 .btn {
   color: @medi-white;
 }
@@ -106,7 +109,7 @@ header,
 .btn-link,
 .btn-primary,
 .btn-default {
-  color: #FFFFFF !important;
+  color: #FFFFFF; //not important because of others!
   background-color: @medi-link-blue;
   outline-color: initial !important;
   border-color: transparent;
@@ -129,6 +132,42 @@ footer {
   border-bottom: 3px solid @medi-grey-darker
 }
 
+.ilSubForm {
+  background-color:  @medi-grey;
+
+}
+
+.ilTableNav {
+  background-color: @medi-grey;
+
+}
+
+.ilTableFilterSec,
+form > .ilTableHeaderTitle,
+form  > .ilHeaderDesc,
+fieldset.ilTableFilter,
+div.ilTableFilterLabel,
+.ilTableCommandRowTop, .ilTableCommandRow {
+  background-color: @medi-grey !important;
+}
+
+.ilFormHeader, .ilFormFooter {
+  color: @medi-font-black !important;
+  background-color: @medi-grey !important;
+}
+
+.ilFormHeader,
+legend {
+  border-bottom: 3px solid #fff !important;
+}
+
+.tblfooter.row.ilContainerListFooter {
+  background-color: #fff;
+}
 .nav-tabs > li > a {
+  color: @medi-font-black !important;
+}
+
+ul.dropdown-menu > li > .btn {
   color: @medi-font-black !important;
 }

@@ -73,6 +73,10 @@ div[class^="il_editarea"] .ilContainerListItemOuter img, img.ilListItemIcon {
     padding-left: @medi-vw-padding-small !important;
 }
 
+.il-maincontrols-metabar .il-link.link-bulky {
+
+}
+
 
 .il-maincontrols-slate-content{
   .il-maincontrols-slate .link-bulky {
@@ -159,7 +163,7 @@ div[class^="il_editarea"] .ilContainerListItemOuter img, img.ilListItemIcon {
   padding-left:  calc(2*@medi-vw-padding-small);
 }
 .il-maincontrols-slate-content {
-  .panel {
+  .panel-body {
     padding-left: @medi-vw-padding-small;
   }
 }
@@ -202,36 +206,138 @@ table {
   }
 }
 
-
 .panel .panel-heading.ilBlockHeader,
 .ilContainerBlockHeader {
   height: @medi-vh-space-small;
+  min-height: 30px;
   line-height: @medi-vh-space-small;
   padding-left:  @medi-vw-padding-small;
   flex-wrap: nowrap;
 
 }
+
+#block_pditems_0 > div > h2,
+#block_pdmem_0 > div > h2,
+.panel-secondary > div > h4 {
+  line-height:  @medi-vh-space-small;
+  height: @medi-vh-space-small;
+  padding-left:  @medi-vw-padding-small;
+  padding-top: 0px;
+}
+
+.il-item-group > h3 {
+  padding-left:  @medi-vw-padding-small;
+}
+
+#block_pditems_0 > div > .dropdown,
+#block_pdmem_0 > div > .dropdown,
+.panel-secondary .dropdown {
+  height: @medi-vh-space-small;
+  padding-right:  @medi-vw-padding-small;
+  padding-top:  @medi-vh-padding-small;
+}
+
 .il-standard-form .il-standard-form-header + .il-section-input {
   margin-top: 0px;
   padding-left: @medi-vw-padding-small;
   padding-top: @medi-vh-padding-small;
 }
 .il-standard-form-footer,
-.il-standard-form .il-standard-form-header,
-.panel-secondary .panel-heading.ilHeader{
+.il-standard-form .il-standard-form-header {
   padding-left:  @medi-vw-padding-small;
   padding-right:  @medi-vw-padding-small;
   padding-top: @medi-vh-padding-small;
   padding-bottom: @medi-vh-padding-small;
 }
+
+
+.tblfooter.row.ilContainerListFooter {
+  padding-top: 0;
+  height: @medi-vh-space-small;
+  line-height: @medi-vh-space-small;
+  padding-left: 0;
+  padding-right:  @medi-vw-padding-small;
+  flex-wrap: nowrap;
+}
+
+#il_right_col {
+  .panel-body {
+    padding: @medi-vh-padding-small @medi-vw-padding-small;
+  }
+}
+
+legend.ilTableFilter {
+  text-align: left;
+}
+
+
+
+form > .ilTableHeaderTitle,
+form  > .ilHeaderDesc {
+  padding-top: @medi-vh-padding-small !important;
+  padding-bottom: @medi-vh-padding-small !important;
+  padding-left:  @medi-vw-padding-small !important;
+  padding-right:  @medi-vw-padding-small !important;
+}
+
+div.ilTableHeaderTitle + .ilHeaderDesc {
+  margin: 0;
+}
+
 .ilFormFooter,
 .ilFormHeader {
-  padding-top: 0;
-  height: @medi-vh-space-middle;
-  line-height: @medi-vh-space-middle;
+  min-height: @medi-vh-space-small;
+  //line-height: @medi-vh-space-middle;
+  padding-top: @medi-vh-padding-small;
   padding-left:  @medi-vw-padding-small;
   padding-right:  @medi-vw-padding-small;
   flex-wrap: nowrap;
+}
+div.ilTableNav {
+  padding: revert;
+}
+.ilTableNav {
+
+
+  padding-left:  @medi-vw-padding-small !important;
+  padding-right:  @medi-vw-padding-small !important;
+  padding-top: @medi-vh-padding-small !important;
+  padding-bottom: @medi-vh-padding-small !important;
+  flex-wrap: nowrap;
+  border-bottom: 3px solid #fff;
+}
+
+fieldset.ilTableFilter {
+  border-bottom: 3px solid #fff;
+  padding: @medi-vh-padding-small @medi-vw-padding-small !important;
+  margin: 0 !important;
+}
+
+legend.ilTableFilter > a {
+  margin: 0;
+}
+
+legend.ilTableFilter {
+  padding-top: @medi-vh-padding-small !important;
+  padding-bottom: @medi-vh-padding-small !important;
+  padding-right: 0px;
+}
+
+.ilWhiteSpaceNowrap.ilRight a, .ilWhiteSpaceNowrap.ilRight .btn-group {
+  padding: 0;
+}
+
+.ilTableCommandRow,
+.ilTableCommandRowTop {
+  height: @medi-vh-space-small;
+  line-height: @medi-vh-space-small !important;
+  padding-left:  15px !important;
+  padding-right:  @medi-vw-padding-small !important;
+  flex-wrap: nowrap;
+}
+table .ilWhiteSpaceNowrap {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 input.btn {
@@ -239,19 +345,32 @@ input.btn {
 }
 
 .panel .panel-body,
-.ilDashboardMainContent .il-std-item,
+.ilDashboardMainContent,
 .ilObjListRow {
-  padding-left:  @medi-vw-padding-small;
+  padding-right:  @medi-vw-padding-small;
   min-height: @medi-vh-space-middle;
-  padding-top:  @medi-vh-padding-small;
-  padding-bottom:  @medi-vh-padding-small;
+
+  .ilFloatRight {
+    padding-top:  @medi-vh-padding-small;
+  }
+
+  .il-std-item {
+    padding-top:  @medi-vh-padding-small;
+    padding-left:  @medi-vw-padding-small;
+    padding-right:  @medi-vw-padding-small;
+    padding-bottom:  @medi-vh-padding-small;
+  }
+  .ilContainerListItemIcon {
+    padding-left:  @medi-vw-padding-small;
+  }
 }
+
 .ilObjListRow {
   padding-right:  @medi-vw-padding-small;
 }
 
-.ilToolbarContainer {
-  margin-top: @medi-vh-padding-small;
+.ilToolbar.navbar.navbar-default  {
+  margin-top: @medi-vh-padding-small !important;
 }
 
 .bulky-label {
@@ -285,6 +404,8 @@ div.il_ContainerItemTitle {
 .form-horizontal label,
 .form-horizontal .control-label {
   padding-right: 20px;
+  padding-top: 0 !important;
+  line-height: 2;
 }
 .form-horizontal div.radio label.radio-inline {
 }
@@ -294,6 +415,11 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   width: 20px !important;
   height: 20px !important;
 }
+
+div.ilTableFilterInput select {
+  min-width: 400px;
+}
+
 .radio input[type="radio"], .radio-inline input[type="radio"] {
   vertical-align: text-top;
 }
@@ -310,6 +436,10 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   margin-left: -20px;
   margin-top:  revert;
   min-width: revert;
+}
+
+.ilSubForm {
+  padding: @medi-vh-padding-small @medi-vw-padding-small;
 }
 
 .input-group-btn {
