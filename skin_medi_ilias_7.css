@@ -283,12 +283,12 @@ th {
 }
 .glyphicon {
   position: relative;
-  top: 1px;
+  /* top: 1px; */
   display: inline-block;
   font-family: "Glyphicons Halflings";
   font-style: normal;
   font-weight: 400;
-  line-height: 1;
+  /* line-height: 1; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -20326,43 +20326,6 @@ body {
   font-size: clamp(1rem, 1vw, 1.6rem);
   font-family: Univers47, Arial, sans-serif;
 }
-.il-maincontrols-slate .btn-bulky.engaged::before,
-.il-maincontrols-slate .link-bulky.engaged::before,
-.il-maincontrols-slate .btn-bulky.disengaged::before,
-.il-maincontrols-slate .link-bulky.disengaged::before,
-.btn-default,
-.btn,
-.il-maincontrols-slate-content > .bulky-label,
-.il-maincontrols-slate .btn-bulky .bulky-label,
-.il-maincontrols-slate .link-bulky .bulky-label,
-.il-maincontrols-mainbar .btn-bulky,
-.il-maincontrols-metabar .btn-bulky,
-.il-maincontrols-mainbar .il-link.link-bulky,
-.il-maincontrols-metabar .il-link.link-bulky,
-.il-item .il-item-property-name,
-.il-item .il-item-property-value,
-.il-maincontrols-footer,
-.help-block,
-.maincontrols-slate-content .il-maincontrols-slate-content .bulky-label,
-.jstree.jstree-default a,
-#search_link,
-label,
-input[type=checkbox],
-input[type=radio],
-select,
-#ilSubTab > li > a,
-#ilSubTab > li.active > a,
-#ilSubTab > li.active > a:hover,
-#ilSubTab > li.active > a:focus,
-.form-control,
-.ilTableFootLight,
-th,
-td {
-  font-style: normal;
-  color: #333;
-  font-size: 0.8rem !important;
-  text-decoration: none;
-}
 .form-control {
   min-height: 40px;
 }
@@ -20457,6 +20420,44 @@ a#il_mhead_t_focus {
   line-height: 1.6;
   text-transform: uppercase;
 }
+.il-maincontrols-slate .btn-bulky.engaged::before,
+.il-maincontrols-slate .link-bulky.engaged::before,
+.il-maincontrols-slate .btn-bulky.disengaged::before,
+.il-maincontrols-slate .link-bulky.disengaged::before,
+.btn-default,
+.btn,
+.il-maincontrols-slate-content > .bulky-label,
+.il-maincontrols-slate .btn-bulky .bulky-label,
+.il-maincontrols-slate .link-bulky .bulky-label,
+.il-maincontrols-mainbar .btn-bulky,
+.il-maincontrols-metabar .btn-bulky,
+.il-maincontrols-mainbar .il-link.link-bulky,
+.il-maincontrols-metabar .il-link.link-bulky,
+.il-item .il-item-property-name,
+.il-item .il-item-property-value,
+.il-maincontrols-footer,
+.help-block,
+.maincontrols-slate-content .il-maincontrols-slate-content .bulky-label,
+.jstree.jstree-default a,
+#search_link,
+label,
+input[type=checkbox],
+input[type=radio],
+select,
+#ilSubTab > li > a,
+#ilSubTab > li.active > a,
+#ilSubTab > li.active > a:hover,
+#ilSubTab > li.active > a:focus,
+.form-control,
+.ilTableFootLight,
+th,
+td,
+#block_pdmail_0 .il-item-description {
+  font-style: normal;
+  color: #333;
+  font-size: 0.8rem !important;
+  text-decoration: none;
+}
 /* spacing */
 .il-layout-page {
   -ms-grid-rows: 5.9vh auto 4.2vh 1fr;
@@ -20465,13 +20466,18 @@ a#il_mhead_t_focus {
   grid-template-columns: 5.9vw 1fr;
 }
 .header-inner {
-  height: 5.9vh;
+  /* height: calc(5.9vh - 1.7vh - 1.7vh); */
 }
 .il-logo {
-  height: calc(5.9vh - 0.9vh - 0.9vh);
+  height: calc(5.9vh - (2*0.9vh));
+}
+header {
+  min-height: 5.9vh;
 }
 header img {
-  height: calc(5.9vh - 0.9vh - 0.9vh);
+  padding-top: 0.9vh;
+  padding-bottom: 0.9vh;
+  height: 5.9vh;
   padding-left: 0.9vw;
 }
 .il-maincontrols-mainbar {
@@ -20479,14 +20485,14 @@ header img {
   grid-template-columns: 5.9vw 24vw;
 }
 .il-maincontrols-mainbar .icon.small {
-  height: calc(5.9vh - 0.9vh - 0.9vh);
-  width: calc(5.9vh - 0.9vh - 0.9vh);
-  line-height: calc(5.9vh - 0.9vh - 0.9vh);
+  height: 5.9vh;
+  width: 5.9vh;
+  line-height: 5.9vh;
 }
 .il-maincontrols-mainbar .panel-secondary .icon.small {
-  height: calc(calc(5.9vh - 0.9vh - 0.9vh)/2);
-  width: calc(calc(5.9vh - 0.9vh - 0.9vh)/2);
-  line-height: calc(calc(5.9vh - 0.9vh - 0.9vh)/2);
+  height: calc(5.9vh/2);
+  width: calc(5.9vh/2);
+  line-height: calc(5.9vh/2);
 }
 div[class^="il_editarea"] .ilContainerListItemOuter img,
 img.ilListItemIcon {
@@ -20517,9 +20523,9 @@ img.ilListItemIcon {
 }
 .il-maincontrols-slate-content .il-maincontrols-slate .disengaged .icon.small,
 .il-maincontrols-slate-content .il-maincontrols-slate-content .icon.small {
-  height: calc(calc(5.9vh - 0.9vh - 0.9vh)/2);
-  width: calc(calc(5.9vh - 0.9vh - 0.9vh)/2);
-  line-height: calc(calc(5.9vh - 0.9vh - 0.9vh)/2);
+  height: calc(5.9vh/2);
+  width: calc(5.9vh/2);
+  line-height: calc(5.9vh/2);
 }
 .il-maincontrols-slate-content .jstree-default li.jstree-node {
   margin-left: 0.9vh;
@@ -20550,10 +20556,15 @@ img.ilListItemIcon {
 #headerimage {
   display: none;
 }
+div.ilContainerListItemContent,
+div.ilContainerListItemIcon {
+  padding-top: 0.9vh;
+}
 .breadcrumb_wrapper .breadcrumb span.crumb a:focus {
   border: none;
 }
 .breadcrumb_wrapper .breadcrumb {
+  padding-top: 0.9vh;
   padding-left: calc(5.9vw + 0.9vw);
 }
 #ilTab {
@@ -20593,6 +20604,9 @@ img.ilListItemIcon {
   padding-right: calc(0.9vw/2) !important;
   padding-top: calc(0.9vh/2) !important;
   padding-bottom: calc(0.9vh/2) !important;
+}
+#block_pdmail_0 .il-item-description {
+  padding-left: 0.9vw;
 }
 table .ilWhiteSpaceNowrap {
   padding-top: 15px;
@@ -20764,7 +20778,7 @@ footer {
   border-left: calc(0.9vw/4) solid transparent;
 }
 div.il_ContainerItemTitle {
-  line-height: calc(5.9vh - 0.9vh - 0.9vh);
+  /* padding-top: 0.9vh; */
 }
 .il-metabar-slates {
   top: 5.9vh;
@@ -20829,6 +20843,64 @@ div.tblfooter.ilContainerListFooter {
 .navbar-brand img {
   padding-top: 0.9vh;
 }
+#il_ui_fw_63188c3b418328_26461787 > li:nth-child(2) {
+  display: none !important;
+}
+.il-maincontrols-metabar {
+  align-items: unset;
+  vertical-align: top;
+}
+.il-maincontrols-metabar li {
+  padding-right: 0.9vw;
+  /* padding-bottom: 0.9vw; */
+  vertical-align: top;
+}
+.il-maincontrols-metabar .icon {
+  height: calc(5.9vh - 0.9vh - 0.9vh);
+  width: calc(5.9vh - 0.9vh - 0.9vh) !important;
+  line-height: 1 !important;
+}
+.il-maincontrols-metabar .il-link .link-bulky {
+  line-height: 1 !important;
+  padding: 0;
+}
+.il-maincontrols-metabar img {
+  padding: 0 !important;
+}
+.il-maincontrols-metabar .btn {
+  padding: 0 !important;
+  /* height: calc(5.9vh - 0.9vh - 0.9vh) !important; */
+  min-width: unset  !important;
+}
+.il-maincontrols-metabar li > .il-link.link-bulky {
+  /* line-height: calc(5.9vh - 0.9vh - 0.9vh) !important; */
+}
+.il-maincontrols-metabar .badge {
+  position: relative;
+}
+.il-maincontrols-metabar .il-counter-status,
+.il-maincontrols-metabar .il-counter-novelty {
+  top: 0;
+  padding: 5px;
+  font-size: 16px;
+}
+.il-maincontrols-metabar .btn-bulky {
+  padding-top: 0.9vh;
+  line-height: 1 !important;
+}
+.il-maincontrols-metabar li > .btn-bulky .glyphicon,
+.il-maincontrols-metabar .il-maincontrols-metabar > li > .link-bulky .glyphicon {
+  height: calc(5.9vh - 0.9vh - 0.9vh);
+  padding: 0;
+}
+.il-maincontrols-metabar .il-avatar {
+  width: calc(5.9vh - 0.9vh - 0.9vh);
+  height: calc(5.9vh - 0.9vh - 0.9vh);
+}
+.il-maincontrols-metabar .il-avatar.il-avatar-letter span.abbreviation {
+  font-size: calc((5.9vh - 0.9vh - 0.9vh) / 2) !important;
+  top: calc((5.9vh - 0.9vh - 0.9vh) / 4) !important;
+}
 body,
 .il-layout-page {
   background-color: transparent !important;
@@ -20886,7 +20958,7 @@ a#il_mhead_t_focus {
   color: #333 !important;
 }
 .il-panel-listing-std-container,
-header,
+header > .header-inner,
 .ilContainerBlockHeader,
 .panel .panel-heading.ilHeader {
   background-color: #eceff3;
@@ -20920,11 +20992,30 @@ header,
 .il-mainbar-triggers .btn-bulky.engaged {
   background-color: #cdcdca !important;
 }
-.il-maincontrols-slate .btn-bulky .icon,
-.il-maincontrols-slate .link-bulky .icon,
+.il-maincontrols-slate .btn-bulky .icon:hover,
+.il-maincontrols-slate .link-bulky .icon:focus,
+.il-mainbar-triggers .btn-bulky .icon,
+.il-mainbar-triggers .btn-bulky .icon:hover,
+.il-mainbar-triggers .btn-bulky .icon:focus,
 .il-mainbar-triggers .il-link.link-bulky .icon,
-.il-mainbar-triggers .btn-bulky .icon {
+.il-mainbar-triggers .il-link.link-bulky .icon:hover,
+.il-mainbar-triggers .il-link.link-bulky .icon:focus,
+.il-mainbar-triggers .il-link.link-bulky:hover .icon,
+.il-mainbar-triggers .btn-bulky:hover .icon,
+.il-maincontrols-slate .btn-bulky .icon,
+.il-maincontrols-slate .link-bulky .icon {
   filter: none;
+}
+.il-mainbar-close-slates {
+  background-color: #008cd7;
+}
+.il-mainbar-close-slates .glyph {
+  font-size: 16px;
+  color: #fff !important;
+}
+.il-counter-status,
+.il-counter-novelty {
+  background-color: #008cd7;
 }
 .il-standard-form .il-section-input-header {
   background-color: transparent;
@@ -20932,11 +21023,16 @@ header,
 .btn-default:hover {
   border-color: transparent;
 }
-.btn-link,
+.btn-link {
+  color: #333;
+  outline-color: initial !important;
+  border-color: transparent;
+  text-decoration: none;
+}
 .btn-primary,
 .btn-default {
-  color: #FFFFFF;
-  background-color: #008cd7;
+  color: #FFFFFF !important;
+  background-color: #008cd7 !important;
   outline-color: initial !important;
   border-color: transparent;
   text-decoration: none;

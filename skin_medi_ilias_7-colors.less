@@ -9,7 +9,7 @@
 
 body,
 .il-layout-page {
-  background-color: transparent !important;
+  background-color: red;
 }
 #ilTab {
   border-bottom: 3px solid @medi-grey-darker;
@@ -65,7 +65,7 @@ h1, h2.medi-system-label, a#il_mhead_t_focus {
 }
 
 .il-panel-listing-std-container,
-header,
+header > .header-inner,
 .ilContainerBlockHeader,
 .panel .panel-heading.ilHeader {
   background-color: @medi-grey;
@@ -94,10 +94,33 @@ header,
 .il-mainbar-triggers .btn-bulky.engaged {
   background-color: @medi-grey-dark !important;
 }
-.il-maincontrols-slate .btn-bulky .icon, .il-maincontrols-slate .link-bulky .icon,
+.il-maincontrols-slate .btn-bulky .icon:hover,
+.il-maincontrols-slate .link-bulky .icon:focus,
+.il-mainbar-triggers .btn-bulky .icon,
+.il-mainbar-triggers .btn-bulky .icon:hover,
+.il-mainbar-triggers .btn-bulky .icon:focus,
 .il-mainbar-triggers .il-link.link-bulky .icon,
-.il-mainbar-triggers .btn-bulky .icon {
+.il-mainbar-triggers .il-link.link-bulky .icon:hover,
+.il-mainbar-triggers .il-link.link-bulky .icon:focus,
+.il-mainbar-triggers .il-link.link-bulky:hover .icon,
+.il-mainbar-triggers .btn-bulky:hover .icon,
+.il-maincontrols-slate .btn-bulky .icon, .il-maincontrols-slate .link-bulky .icon {
   filter: none;
+
+}
+
+.il-mainbar-close-slates {
+  .glyph {
+    font-size: 16px;
+    color: #fff !important;
+  }
+
+  background-color: @medi-link-blue
+}
+
+.il-counter-status,
+.il-counter-novelty {
+  background-color: @medi-link-blue;
 }
 
 .il-standard-form .il-section-input-header {
@@ -106,11 +129,16 @@ header,
 .btn-default:hover {
   border-color: transparent;
 }
-.btn-link,
+.btn-link {
+  color: @medi-font-black; //not important because of others!
+  outline-color: initial !important;
+  border-color: transparent;
+  text-decoration: none;
+}
 .btn-primary,
 .btn-default {
-  color: #FFFFFF; //not important because of others!
-  background-color: @medi-link-blue;
+  color: #FFFFFF  !important;
+  background-color: @medi-link-blue  !important;
   outline-color: initial !important;
   border-color: transparent;
   text-decoration: none;
