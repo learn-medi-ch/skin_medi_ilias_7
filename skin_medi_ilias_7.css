@@ -17375,6 +17375,7 @@ div.ilInfoScreenSec h2.ilHeader {
 div.ilStartupSection form.form-horizontal {
     text-align: left;
     width: 40em;
+    padding-left: 0px;
 }
 @media only screen and (max-width: 768px) {
     div.ilStartupSection form.form-horizontal {
@@ -19752,37 +19753,62 @@ div.framed {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #fff;
+  margin-top: -3000px;
+  padding-top: 3000px;
+  padding-right: 3000px;
+  margin-right: -3000px;
+  margin-bottom: -3000px;
+  padding-bottom: 3000px;
+}
+@media only screen and (max-width: 1000px) {
+.flexitem_c1 {
+    display: none;
+}
+    .flexitem_c2 {
+        padding-top: 0px !important;
+    }
 }
 .flexitem_c1 {
   width: auto;
+  background: #fff;
+  /* padding-right: 3000px; */
+  /* margin-right: -3000px; */
+  /* margin-bottom: -3000px; */
+  /* padding-bottom: 3000px; */
 }
 img.flexitem_c1_bg {
-  margin-top: 10vw;
-  margin-left: 10vw;
-  position: relative;
-  max-width: 20vw;
+  margin-top: 150px;
+  margin-left: 150px;
+  max-width: 300px;
+  topcalc(50vh - 300px): ;
 }
 .flexitem_c2 {
-  width: 80%;
-  margin-top: 10vw;
+  width: 100%;
+  /* padding-left: calc(50vw); */
+  padding-top: calc(50vh - 300px);
+  background: #fff;
+  min-width: 300px;
 }
 .flexitem_c3 {
   display: none;
 }
 .medi-login-container {
   height: 100%;
-  width: 50%;
-  background-color: #fff;
+  
+  
+  
   /* .form-control, .form-control:focus, input:invalid {
     border-color: @medi_grey_2;
     background-color: @medi_grey_1;
     width: 100% !important;
   }*/
+  width: 400px;
 }
 .medi-login-container .ilStartupSection {
-  background-color: #fff;
-  padding: 4.5% 7%;
+  background-color: var(--grey);
+  padding: 15px;
+  /* padding: 4.5% 7%; */
 }
 .medi-login-container .ilStartupSection .medi-icon-container {
   margin-top: 0px !important;
@@ -19845,7 +19871,7 @@ img.flexitem_c1_bg {
   display: none;
 }
 .medi-login-container div.ilStartupSection form.form-horizontal {
-  background-color: #fff !important;
+  background-color: var(--grey) !important;
   padding-bottom: 7%;
 }
 @media only screen and (min-width: 768px) {
@@ -19900,7 +19926,7 @@ img.flexitem_c1_bg {
 }
 .medi-login-container .form-horizontal,
 .medi-login-container .ilFormCmds {
-  background-color: #fff !important;
+  background-color: var(--grey) !important;
 }
 .medi-login-container [type=color],
 .medi-login-container [type=date],
