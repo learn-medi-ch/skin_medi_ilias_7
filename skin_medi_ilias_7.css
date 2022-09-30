@@ -19763,11 +19763,20 @@ div.framed {
 .flexitem_c1 {
     display: none;
 }
- 
+    .main_flexed {
+        background: var(--grey);
+    }
+ .medi-login-container {
+   
+       background: var(--grey);
+ }
     
     .flexitem_c2 {
+        background: var(--grey) !important;
+     margin-left: -1000px;
+     padding-left: calc(1000px + 30%);
         /* padding-top: 30% !important; */
-        padding-left: 30% !important;
+       
         position: absolute;
         top: 0px !important;
         right: 0px !important;
