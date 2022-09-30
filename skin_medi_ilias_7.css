@@ -9730,6 +9730,7 @@ footer {
     }
 }
 .il-maincontrols-metabar {
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9739,8 +9740,8 @@ footer {
     z-index: 999;
     /* display: grid; */
     grid-column: 4;
-    margin-bottom: -100px;
-    padding-bottom: 100px;
+    /* margin-bottom: -100px; */
+    /* padding-bottom: 100px; */
     background: var(--grey);
 }
 .il-maincontrols-metabar > li > .btn-bulky > .bulky-label,
