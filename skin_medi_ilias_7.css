@@ -9268,6 +9268,8 @@ main {
   /* grid-column: 1; */
     margin-left: -1000px;
     padding-left: 1000px;
+    margin-right: -1000px;
+    padding-right: 1000px;
 }
 /* Footer */
 footer {
