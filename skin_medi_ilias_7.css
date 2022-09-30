@@ -19750,8 +19750,6 @@ div.framed {
  *
 */
 .main_flexed {
-  display: flex;
-  flex-wrap: nowrap;
   width: 100%;
   background-color: #fff;
   margin-top: -3000px;
@@ -19765,9 +19763,19 @@ div.framed {
 .flexitem_c1 {
     display: none;
 }
+ 
+    
     .flexitem_c2 {
-        padding-top: 0px !important;
+        /* padding-top: 30% !important; */
+        padding-left: 30% !important;
+        position: absolute;
+        top: 0px !important;
+        right: 0px !important;
+        left:0px !important;
+        bottom:0px !important;
+        height: 100vh;
     }
+  
 }
 .flexitem_c1 {
   width: auto;
@@ -19778,15 +19786,17 @@ div.framed {
   /* padding-bottom: 3000px; */
 }
 img.flexitem_c1_bg {
-  margin-top: 150px;
-  margin-left: 150px;
+  /* margin-top: 50px; */
+  margin-left: 50px;
+  margin-top: 50px;
   max-width: 300px;
-  topcalc(50vh - 300px): ;
 }
 .flexitem_c2 {
   width: 100%;
   /* padding-left: calc(50vw); */
-  padding-top: calc(50vh - 300px);
+  top: calc(50vh - 300px);
+  left: 50vw;
+  position: absolute;
   background: #fff;
   min-width: 300px;
 }
@@ -19807,7 +19817,7 @@ img.flexitem_c1_bg {
 }
 .medi-login-container .ilStartupSection {
   background-color: var(--grey);
-  padding: 15px;
+  padding: 20px;
   /* padding: 4.5% 7%; */
 }
 .medi-login-container .ilStartupSection .medi-icon-container {
