@@ -7698,13 +7698,12 @@ a fieldset[disabled] .active {
     font-size: 12px;
 }
 h4.il-divider {
-    padding: 4px 6px;
+    padding-left: 15px;
     margin-bottom: 0px;
-    background-color: white;
+    background-color: var(--grey);
     display: block;
-    font-size: 12px;
-    line-height: 1.5;
-    color: #161616;
+    color: var(--font-color);
+    margin-top: 0px;
 }
 hr.il-divider-with-label {
     display: none;
@@ -9104,7 +9103,7 @@ grid-based layout
 }
 .il-layout-page.with-mainbar-slates-engaged .il-maincontrols-mainbar .il-mainbar-slates .il-maincontrols-slate {
      overflow-y: auto;
-     /* height: calc(100% - 750px); */
+     height: calc(100vh - 250px);
      -webkit-overflow-scrolling: touch;
      min-height: 0;
 }
