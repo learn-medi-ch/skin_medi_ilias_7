@@ -9194,6 +9194,8 @@ div.il-system-infos {
     grid-column: 1;
     grid-row: 4;
     z-index: 997;
+    margin-top: -1000px;
+    padding-top: 1000px;
 }
 .il-maincontrols-mainbar {
   display: grid;
@@ -9264,6 +9266,8 @@ main {
   grid-row-start: 1;
   grid-row-end: 2;
   /* grid-column: 1; */
+    margin-left: -1000px;
+    padding-left: 1000px;
 }
 /* Footer */
 footer {
@@ -19779,10 +19783,10 @@ div.framed {
         /* padding-top: 30% !important; */
        
         position: absolute;
-        top: 0px !important;
-        right: 0px !important;
-        left:0px !important;
-        bottom:0px !important;
+        top: 0 !important;
+        right: 0 !important;
+        left:0 !important;
+        bottom:0 !important;
         height: 100vh;
     }
   
@@ -19790,10 +19794,6 @@ div.framed {
 .flexitem_c1 {
   width: auto;
   background: #fff;
-  /* padding-right: 3000px; */
-  /* margin-right: -3000px; */
-  /* margin-bottom: -3000px; */
-  /* padding-bottom: 3000px; */
 }
 img.flexitem_c1_bg {
   /* margin-top: 50px; */
