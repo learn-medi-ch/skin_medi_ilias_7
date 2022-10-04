@@ -9100,10 +9100,11 @@ grid-based layout
     -ms-flex-direction: column;
     flex-direction: column;
     z-index: 995;
+    height: calc(100vh - 170px);
 }
 .il-layout-page.with-mainbar-slates-engaged .il-maincontrols-mainbar .il-mainbar-slates .il-maincontrols-slate {
      overflow-y: auto;
-     height: calc(100vh - 250px);
+     /* height: calc(100vh - 200px); */
      -webkit-overflow-scrolling: touch;
      min-height: 0;
 }
