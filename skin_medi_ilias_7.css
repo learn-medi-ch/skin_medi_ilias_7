@@ -12300,7 +12300,8 @@ div.ilCommandRow.one_side_col {
     padding-left: 22%;
 }
 div.ilAdminRow {
-    margin: 10px 15px 20px 15px;
+    margin: 10px 0px;
+    grid-column: 1;
 }
 table.std {
     color: #161616;
