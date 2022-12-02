@@ -55,6 +55,10 @@ a:hover {
     background-color: var(--link-color);
     border-color: var(--link-color);
 }
+.btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background-color: var(--grey-color);
+    color: var(--font-color);
+}
 .btn-default:hover {
     background-color: var(--grey-color);
     color: var(--font-color);
