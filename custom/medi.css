@@ -23,7 +23,7 @@ body {
     font-family: Helvetica, Arial,  sans-serif;
 }
 h1.ilHeader {
-    border-bottom: 30px solid var(--grey-color);
+    border-bottom: 2px solid var(--grey-color);
     margin-left: -30px;
     padding-left: 30px;
     margin-right: -30px;
