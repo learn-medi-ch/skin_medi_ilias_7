@@ -64,6 +64,11 @@ a:hover {
     background-color: #fff;
     border-color: var(--link-color);
 }
+.btn-default:focus, .btn-default.focus {
+    color: #fff;
+    background-color: var(--link-color);
+    border-color: var(--link-color);
+}
 .btn-primary {
     color: #fff;
     background-color: var(--link-color);
