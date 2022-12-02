@@ -22,6 +22,14 @@ html {
 body {
     font-family: Helvetica, Arial,  sans-serif;
 }
+h1.ilHeader {
+    border-bottom: 30px solid var(--grey-color);
+    margin-left: -30px;
+    padding-left: 30px;
+    margin-right: -30px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
 .il-pagetitle {
     padding-left: 25px;
 }
@@ -184,7 +192,7 @@ h4.il-divider {
 }
 .ilTabsContentOuter{
     background-color: #fff;
-    padding-top: 20px;
+    padding-top: 10px;
     margin-right: 0px;
     margin-left: 0px;
 }
