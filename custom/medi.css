@@ -60,8 +60,8 @@ a:hover {
     color: var(--link-color);
 }
 .btn-default {
-    color: #fff;
-    background-color: var(--link-color);
+    color: var(--link-color);
+    background-color: #fff;
     border-color: var(--link-color);
 }
 .btn-primary {
