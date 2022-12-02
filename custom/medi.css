@@ -373,7 +373,18 @@ div.ilContainerListItemCB {
     padding-left: 10px;
 }
 
-
+@media only screen and (max-width: 768px) {
+    .il-layout-page .nav.il-maincontrols .il-maincontrols-mainbar .il-mainbar {
+        box-shadow: none;
+    }
+    .il-layout-page .nav.il-maincontrols {
+        border-top: solid 10px var(--grey-color);
+        border-top: solid 10px var(--grey-color);
+        padding-top: 10px;
+        padding-bottom: 20px;
+        background: var(--grey-color);
+    }
+}
 
 
 
