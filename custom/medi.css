@@ -408,6 +408,14 @@ div.ilContainerListItemCB {
     padding-left: 10px;
 }
 
+div.ilc_page_tnav_TopNavigation {
+    background-image: none;
+}
+div.ilc_page_bnav_BottomNavigation {
+    background-image: none;
+    background-color: transparent;
+}
+
 @media only screen and (max-width: 768px) {
     .il-layout-page .nav.il-maincontrols .il-maincontrols-mainbar .il-mainbar {
         box-shadow: none;
