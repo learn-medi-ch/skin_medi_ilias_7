@@ -325,7 +325,7 @@ div.ilAdminRow {
     padding-left: 5px;
 }
 div.il_HeaderInner {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
@@ -386,7 +386,7 @@ footer {
     width: 300px;
 }
 div.ilc_text_block_Standard, body.ilc_text_block_Standard {
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 .il-deck .row > div {
