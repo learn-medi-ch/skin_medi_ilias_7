@@ -21,6 +21,7 @@ html {
 }
 body {
     font-family: Helvetica, Arial,  sans-serif;
+    color: var(--font-color);
 }
 h1.ilHeader {
     border-bottom: 2px solid var(--grey-color);
@@ -29,6 +30,10 @@ h1.ilHeader {
     margin-right: -30px;
     padding-bottom: 20px;
     padding-top: 10px;
+}
+h2.ilHeader {
+    color: var(--font-color);
+    font-weight: bold;
 }
 .il-pagetitle {
     padding-left: 25px;
