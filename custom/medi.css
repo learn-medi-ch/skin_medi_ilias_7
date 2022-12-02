@@ -415,6 +415,9 @@ div.ilc_page_bnav_BottomNavigation {
     background-image: none;
     background-color: transparent;
 }
+div.ilc_page_frame_PageFrame {
+    padding-left: 5px;
+}
 
 @media only screen and (max-width: 768px) {
     .il-layout-page .nav.il-maincontrols .il-maincontrols-mainbar .il-mainbar {
