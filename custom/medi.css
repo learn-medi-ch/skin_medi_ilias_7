@@ -40,7 +40,7 @@ h2.ilHeader {
     padding-left: 25px;
 }
 .breadcrumb_wrapper .breadcrumb {
-    padding-left: 95px;
+    padding-left: 110px;
 }
 .breadcrumb_wrapper .breadcrumb span.crumb a {
     color:  var(--link-color);
@@ -132,6 +132,9 @@ a:hover {
 /**
   Mainbar
  */
+.il-maincontrols-mainbar {
+    margin-left: 15px;
+}
 .il-mainbar {
     box-shadow: none;
 }
@@ -171,7 +174,7 @@ h4.il-divider {
     background: var(--grey-color);
 }
 .il-logo {
-    padding-left: 25px;
+    padding-left: 40px;
 }
 .il-layout-page {
     background: var(--grey-color);
