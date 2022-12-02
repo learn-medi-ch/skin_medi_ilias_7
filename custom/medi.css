@@ -158,6 +158,7 @@ a:hover {
 }
 .il-mainbar-slates {
     box-shadow: none;
+    background-color: var(--grey-color);
 }
 
 /**
