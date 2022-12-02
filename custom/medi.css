@@ -384,6 +384,10 @@ div.ilContainerListItemCB {
         padding-bottom: 20px;
         background: var(--grey-color);
     }
+
+    .header-inner {
+        box-shadow: none;
+    }
 }
 
 
