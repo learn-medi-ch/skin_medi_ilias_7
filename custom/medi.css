@@ -69,6 +69,9 @@ a:hover {
     background-color: var(--link-color);
     border-color: var(--link-color);
 }
+.panel .panel-heading.ilHeader .dropdown > button.dropdown-toggle, .panel .panel-heading.ilBlockHeader .dropdown > button.dropdown-toggle {
+    color: var(--link-color);
+}
 .btn-default:focus, .btn-default.focus {
     color: #fff;
     background-color: var(--link-color);
