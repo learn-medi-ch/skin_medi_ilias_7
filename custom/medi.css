@@ -285,6 +285,7 @@ div.ilAdminRow {
 }
 .ilContainerBlockHeader {
     padding-left: 5px;
+    margin-top: 30px;
     background-color: transparent;
 }
 .il-layout-page-content > div {
@@ -398,10 +399,6 @@ div.ilc_text_block_Standard, body.ilc_text_block_Standard {
 .il-card {
     height: 250px;
     position: relative;
-}
-.il-card img.img-responsive, .il-card img.img-standard {
-    position: revert;
-    width: 100%;
 }
 
 div.ilContainerListItemCB {
@@ -693,4 +690,8 @@ img.flexitem_c1_bg {
 }
 .medi-login-container .ilStartupSection .ilFormHeader, .medi-login-container .ilStartupSection .ilFormFooter {
     background-color: transparent !important;
+}
+
+div.il-card-repository-head > div:nth-child(1) > img {
+    display:none;
 }
