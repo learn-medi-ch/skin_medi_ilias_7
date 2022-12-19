@@ -396,10 +396,6 @@ div.ilc_text_block_Standard, body.ilc_text_block_Standard {
     margin-bottom: 30px;
 }
 
-.il-card {
-    height: 250px;
-    position: relative;
-}
 
 div.ilContainerListItemCB {
     padding-left: 10px;
@@ -694,4 +690,7 @@ img.flexitem_c1_bg {
 
 div.il-card-repository-head > div:nth-child(1) > img {
     display:none;
+}
+.il-card .card-title .btn, .il-card .card-title a {
+    font-size: 19px;
 }
