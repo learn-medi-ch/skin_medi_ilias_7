@@ -7,6 +7,29 @@
         background-size: cover;
     }
 
+    @media only screen and (max-width: 1000px) {
+        body,
+        .ilContentFixed,
+        .il-layout-page,
+        #mainspacekeeper,
+        #mainscrolldiv,
+        .flexitem_c2,
+        .ilTabsContentOuter,
+        .il-maincontrols,
+        .il-maincontrols-mainbar {
+            background-color: var(--grey-color) !important;
+        }
+
+        .flexitem_c2 {
+            margin-left: 0;
+            padding: 0;
+        }
+
+        .flexitem_c1 {
+            display: none;
+        }
+    }
+
     #il_center_col {
         padding-top: 0;
     }

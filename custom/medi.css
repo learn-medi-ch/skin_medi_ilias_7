@@ -424,8 +424,17 @@ div.ilc_page_frame_PageFrame {
         background: var(--grey-color);
     }
 
+    .il-maincontrols-metabar .il-metabar-more-button {
+        padding-right: 0px;
+    }
+
     .header-inner {
         box-shadow: none;
+        padding-right: 0px;
+    }
+
+    .il-mainbar-triggers {
+        padding-right: 30px;
     }
 }
 
@@ -441,6 +450,7 @@ div.ilc_page_frame_PageFrame {
     background-color: #fff;
 }
 @media only screen and (max-width: 1000px) {
+
     .flexitem_c1 {
         display: none;
     }
@@ -693,4 +703,11 @@ div.il-card-repository-head > div:nth-child(1) > img {
 }
 .il-card .card-title .btn, .il-card .card-title a {
     font-size: 19px;
+}
+.alert {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.medi-login-container {
+    background-color: var(--grey-color);
 }
