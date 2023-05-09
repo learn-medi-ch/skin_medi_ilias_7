@@ -1,0 +1,179 @@
+<style>
+
+    .medi-icon {
+        padding-left: 10px;
+    }
+
+    .form-control {
+        background-color: #fff !important;
+        border-color: initial !important;
+    }
+
+    #mainspacekeeper {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .ilHeader {
+        display: none !important;
+    }
+
+    .form-control {
+        width: 100% !important;
+    }
+
+    .button {
+
+        text-decoration: none;
+        text-align: center;
+        padding: 11px 32px;
+        border: solid 1px #004F72;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        font: 18px Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #ffffff;
+        background: #008cd7;
+        -webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+        -moz-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+        box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+    }
+
+    .button:hover {
+
+        padding: 11px 32px;
+        border: solid 1px #004F72;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        font: 18px Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #3076d9;
+        background-image: -moz-linear-gradient(top, #3076d9 0%, #206cd6 100%);
+        background-image: -webkit-linear-gradient(top, #3076d9 0%, #206cd6 100%);
+        background-image: -o-linear-gradient(top, #3076d9 0%, #206cd6 100%);
+        background-image: -ms-linear-gradient(top, #3076d9 0%, #206cd6 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#206cd6', endColorstr='#206cd6', GradientType=0);
+        background-image: linear-gradient(top, #3076d9 0%, #206cd6 100%);
+        -webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+        -moz-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+        box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+        text-decoration: none;
+    }
+
+    .medi-login-container div.form-horizontal .col-sm-3 {
+        padding-left: 0px !important;
+    }
+
+    .medi-login-container div.form-horizontal .col-sm-9 {
+        padding-left: 0px !important;
+    }
+
+    .medi-login-container .form-horizontal label {
+        padding-bottom: 5px !important;
+    }
+
+    .medi-login-container #il_prop_cont_username label {
+        font-style: italic;
+        font-size: 12px;
+    }
+
+    .medi-login-container #il_prop_cont_password label {
+        font-style: italic;
+        font-size: 12px;
+    }
+
+    .form-horizontal {
+        margin-bottom: 20px !important;
+    }
+
+
+    .medi-login-container .ilFormCmds .btn {
+        margin-left: 0px !important;
+    }
+
+</style>
+
+<!-- BEGIN login_information -->
+<div class="small">{TXT_LOGIN_INFORMATION}</div>
+<!-- END login_information -->
+
+<div>
+    <!-- BEGIN login_page_editor -->
+    {LPE}
+    <!-- END login_page_editor -->
+</div>
+
+
+<!-- BEGIN shib_login_form -->
+<p>
+    {SHIB_LOGIN_FORM}
+</p>
+<!-- END shib_login_form -->
+<!-- BEGIN saml_login -->
+{SAML_LOGIN_FORM}
+<!-- END saml_login -->
+<!-- BEGIN cas_login -->
+<p>
+    {CAS_LOGIN_FORM}
+</p>
+<!-- END cas_login -->
+<!-- BEGIN ilias_login -->
+
+<div class="divider"
+     style="position: relative; margin-top: 30px;  width: 100%; display: flex; flex-direction: column;">
+    <h2 style="margin-top: 0px; font-weight: 0; color: #333; font-size: 16px; text-transform: lowercase;">...@medi.ch,
+        ...@medi-bern.ch</h2>
+</div>
+
+<div style="margin-top:10px; width: 100%" class="button">
+    <svg class="svg-inline--fa fa-microsoft fa-lg mr-2" aria-hidden="true" focusable="false" data-prefix="fab"
+         data-icon="microsoft" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""
+         style="height: 14px; padding-right: 7px">
+        <path fill="currentColor"
+              d="M0 32h214.6v214.6H0V32zm233.4 0H448v214.6H233.4V32zM0 265.4h214.6V480H0V265.4zm233.4 0H448V480H233.4V265.4z"></path>
+    </svg>
+    <a style="color: #fff; text-decoration:none;" href="https://learn.medi.ch/openidconnect.php">ANMELDEN MIT M365</a>
+</div>
+
+<div style="margin-top: 15px;">
+		<span class="reg-links">
+			<a class="il_ContainerItemCommand"
+               href="https://feusi.atlassian.net/wiki/spaces/IW/pages/262209/Microsoft+365#Informationen-zur-Kennwort-R%C3%BCcksetzung-%C3%BCberpr%C3%BCfen%2Fanpassen">Oublié le mot de passe / Passwort vergessen?</a>
+		</span>
+</div>
+
+<div class="divider"
+     style="position: relative; margin-top: 60px; margin-bottom: 10px;  color: #5a5a5a; width: 100%; display: flex; flex-direction: column;">
+    <h2 style="margin-top: 0px; font-weight: 0; color: #333; font-size: 16px; text-transform: lowercase;">Autres comptes
+        / Andere Accounts</h2>
+</div>
+
+{LOGIN_FORM}
+<!-- END ilias_login -->
+<!-- BEGIN reg_links -->
+<span class="reg-links">
+		{REG_PWD_CLIENT_LINKS}
+	</span>
+<!-- END reg_links -->
+<!-- BEGIN agreement -->
+<!--<p>
+    {USER_AGREEMENT}
+</p>-->
+<!-- END agreement -->
+
+<!-- BEGIN oidc_login -->
+<!-- {OPEN_ID_CONNECT_LOGIN_FORM}
+<!-- END oidc_login -->
+
+
+<script>
+    <!--
+    if (document.formlogin.username && document.formlogin.password) {
+        if (document.formlogin.username.value != "") document.formlogin.password.focus();
+        else document.formlogin.username.focus();
+    }
+    //-->
+</script>

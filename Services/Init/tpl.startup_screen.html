@@ -1,0 +1,176 @@
+<style>
+    body {
+        background: #fff !important;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    h2 {
+        margin-bottom: 6px !important;
+    }
+
+    .form-horizontal .control-label {
+        min-height: 28px;
+    }
+
+    .il-layout-page-content > div {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    @media only screen and (max-width: 400px) {
+        .medi-icon {
+            padding-left: 20px !important;
+        }
+        .medi-login-container {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+        }
+    }
+
+    @media only screen and (min-width: 400px) {
+        .medi-login-container {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        body,
+        .ilContentFixed,
+        .il-layout-page,
+        #mainspacekeeper,
+        #mainscrolldiv,
+        .flexitem_c2,
+        .ilTabsContentOuter,
+        .il-maincontrols,
+        .il-maincontrols-mainbar {
+            background-color: var(--grey-color) !important;
+        }
+
+        .flexitem_c2 {
+            margin-left: 0;
+            padding: 0;
+        }
+
+        .flexitem_c1 {
+            display: none;
+        }
+    }
+
+    #il_center_col {
+        padding-top: 0;
+    }
+
+    header,
+    footer {
+        display: none;
+    }
+
+    div.il_HeaderInner {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .il-layout-page {
+        all: unset;
+    }
+
+    .il-layout-page-content {
+        all: unset;
+    }
+
+
+    .breadcrumbs {
+        display: none;
+    }
+
+    .nav .il-maincontrols {
+        display: none;
+    }
+
+    .il-mainbar {
+        display: none;
+    }
+
+    div.ilAdminRow {
+        display: none;
+    }
+
+    .ilMainHeader {
+        box-shadow: 0px 3px 3px rgba(25, 25, 25, 0.20) !important;
+    }
+
+    .medi-login-container {
+        width: 320px !important;
+    }
+
+</style>
+
+<div class="main_flexed">
+    <div class="flexitem_c1">
+        <img class="flexitem_c1_bg" src="./Customizing/global/skin/skin_medi_ilias_7/images/medi/medi_quadrat.jpg">
+    </div>
+    <div class="flexitem_c2">
+
+        <div class="medi-icon-container" style="float: none; height: 90px; margin-left: -5px;">
+            <span style="float: left;">
+                <img class="medi-icon" src="./Customizing/global/skin/skin_medi_ilias_7/images/medi/medi_small.svg"
+                     style="width: 60px;">
+            </span>
+            <span style="padding-left: 15px; float: left">
+                <h2 style="margin-top: 0px; font-weight: 0; font-size: 16px; text-transform: lowercase;">CONNEXION / ANMELDEN</h2>
+                <h2 style="margin-top: 0px; font-weight: 600; font-size: 16px">ILIAS</h2>
+	         </span>
+        </div>
+
+        {MESSAGE}
+
+        <div style="padding-top: 10px;" class="medi-login-container">
+            <div class="ilMessageBox">
+                <!-- BEGIN warning -->
+                <img class="ilFailureMessage" alt="{ALT_IMAGE}" title="{ALT_IMAGE}" src="{SRC_IMAGE}"/>
+                <div class="ilFailureMessage">
+                    <h5 class="ilAccHeadingHidden"><a id="il_message_focus"
+                                                      name="il_message_focus">{MESSAGE_HEADING}</a></h5>
+                    {TXT_MSG_LOGIN_FAILED}
+                </div>
+                <!-- END warning -->
+                <!-- BEGIN success -->
+                <img class="ilSuccessMessage" alt="{ALT_IMAGE}" title="{ALT_IMAGE}" src="{SRC_IMAGE}"/>
+                <div class="ilSuccessMessage">
+                    <h5 class="ilAccHeadingHidden"><a id="il_message_focus"
+                                                      name="il_message_focus">{MESSAGE_HEADING}</a></h5>
+                    {TXT_MSG_LOGIN_SUCCESS}
+                </div>
+                <!-- END success -->
+            </div>
+
+            <ul id="ilTopBarNav" class="">
+                <!-- BEGIN lang_select -->
+                <li class="dropdown"><a id="mm_lang_sel" href="#" class="dropdown-toggle" data-toggle="dropdown">{TXT_LANGSELECT}
+                    <span class="caret"></span></a>
+                    {LANG_SELECT}
+                </li>
+                <!-- END lang_select -->
+            </ul>
+
+            {STARTUP_CONTENT}
+            <!-- BEGIN links_bl -->
+            <div class="ilCenter" style="padding-top: 25px">
+                <!-- BEGIN link_item_bl -->
+                <a class="il_ContainerItemCommand" href="{LINK_URL}">{LINK_TXT}</a>
+                <!-- END link_item_bl -->
+            </div>
+            <!-- END links_bl -->
+        </div>
+        {PRMLINK}
+        {SCRIPT}
+    </div>
+    <div class="flexitem_c3">
+    </div>
+</div>
