@@ -1,0 +1,59 @@
+<style>
+    body {
+        overflow: scroll;
+    }
+    .ilTabsContentOuter {
+        background-color: var(--grey-color) !important;
+    }
+    .medi-icon-container {
+       margin-left: 0px !important;
+    }
+    body, #mainspacekeeper , .il-layout-page, .il-layout-page-content {
+        background-color: var(--grey-color) !important;
+    }
+    h1.ilHeader {
+        display: none;
+    }
+    #il_center_col > div > div.flexitem_c2 > div.medi-icon-container > span:nth-child(2) > h2:nth-child(1) {
+        display: none;
+    }
+    .medi-login-container {
+        width: 800px !important;
+        overflow: auto;
+        background-color: #fff;
+    }
+    .medi-login-container p {
+        margin: 5px !important;
+        padding: 5px !important;
+    }
+    form {
+        overflow: auto;
+    }
+    .flexitem_c2 {
+        margin-left: 0;
+        padding: 0;
+        background-color: var(--grey-color) !important;
+    }
+
+    .flexitem_c1 {
+        display: none !important;
+    }
+
+    .flexitem_c2 {
+        width: 100%;
+        top: 10px !important;
+        left: 10px !important;
+        position: absolute;
+        background: #fff;
+    }
+
+</style>
+
+
+{TERMS_OF_SERVICE_CONTENT}
+<form action="{FORM_ACTION}" method="post">
+    <b>{ACCEPT_TERMS_OF_SERVICE}</b>
+    <label for="deny"><b>{DENY_TERMS_OF_SERVICE}</b></label>&nbsp
+		{DENIAL_BUTTON}
+<!-- END get_acceptance -->
+</form>

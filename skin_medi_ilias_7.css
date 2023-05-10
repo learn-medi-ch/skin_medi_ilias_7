@@ -20181,3 +20181,6 @@ table.mceToolbar td {
   border: 1px solid #dddddd;
   border-radius: 0.25em;
 }
+.modal-title {
+  display: none;
+}
